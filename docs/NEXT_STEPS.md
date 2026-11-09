@@ -60,9 +60,23 @@ Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu ko
 
 ## Fase 4 — LAN multi-laptop
 - [ ] mkcert untuk IP server, pasang rootCA di laptop client, buka port 8000 di firewall.
+      _Sisi server siap (2026-11-09): mkcert 1.4.4, `cert.pem`/`key.pem` untuk `10.127.19.183`,
+      `LEPI-RIDLO`, `localhost`, `127.0.0.1` (berlaku s.d. 9 Feb 2029). Rantai TLS terverifikasi terhadap
+      `rootCA.pem`. `mkcert -install` sengaja tidak dijalankan di server (tidak diperlukan)._
+      _Sisa (manual): (1) salin `%LOCALAPPDATA%\mkcert\rootCA.pem` (JANGAN `rootCA-key.pem`) ke laptop
+      client, lalu `certutil -addstore -user Root rootCA.pem` dan restart Chrome; (2) firewall: saat ini ada
+      rule Allow python.exe 3.11 di profil Public untuk SEMUA port (dari popup Windows). Disarankan
+      (PowerShell admin) ganti dengan rule sempit:
+      `New-NetFirewallRule -DisplayName "OSCE-STT 8000" -Direction Inbound -Protocol TCP -LocalPort 8000 -RemoteAddress LocalSubnet -Action Allow`
+      lalu nonaktifkan rule python.exe yang terlalu luas. IP Wi-Fi berasal dari DHCP: bila berubah, buat ulang
+      `cert.pem` dengan IP baru._
 - [ ] Dua laptop client submit bersamaan → antrean berurutan, tidak ada OOM.
-- [ ] Set `APP_ACCESS_TOKEN`.
+      _Disimulasikan dari server lewat `https://10.127.19.183:8000` + token: 2 job serentak diproses
+      berurutan, tanpa OOM, puncak VRAM 2504 MiB. Uji dengan 2 laptop fisik masih tertunda._
+- [x] Set `APP_ACCESS_TOKEN`.
+      _Token acak di `.env` (tidak di-commit). Tanpa/salah token → 401; UI meminta token sekali via prompt._
 - **Selesai bila:** rekam dari laptop client lewat HTTPS berhasil tanpa flag Chrome.
+  _Perintah server: `uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-certfile cert.pem`._
 
 ## Fase 5 — Data & training (inti penilaian ML)
 - [ ] `scripts/generate_synthetic_llm.py --n-dialogs 60` (Ollama). Cek manual 50 baris acak, perbaiki

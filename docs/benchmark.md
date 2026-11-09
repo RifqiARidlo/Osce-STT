@@ -59,8 +59,7 @@ LLM ini justru menguntungkan, tetapi perlu diperhitungkan saat evaluasi WER.
 
 ### Belum diukur
 - WER pada rekaman mikrofon asli (2–3 sesi, pembicara manusia).
-- VRAM saat swap Whisper → LLM (Fase 3).
-- Latensi end-to-end dengan LLM untuk rekaman 3/5/10 menit (Fase 3).
+- VRAM saat swap Whisper → LLM dan latensi end-to-end dengan LLM: lihat Fase 3 di bawah.
 
 ## Fase 3 — LLM asli (Ollama) (2026-11-09)
 | Komponen | Versi |
