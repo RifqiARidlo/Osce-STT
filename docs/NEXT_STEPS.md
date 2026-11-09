@@ -47,11 +47,16 @@ Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu ko
   asli** masih tertunda (dijadwalkan pada pengujian menyeluruh)._
 
 ## Fase 3 — LLM asli (Ollama)
-- [ ] `ollama pull qwen2.5:3b`, `APP_LLM_BACKEND=ollama`. Pastikan versi Ollama mendukung `format`
+- [x] `ollama pull qwen2.5:3b`, `APP_LLM_BACKEND=ollama`. Pastikan versi Ollama mendukung `format`
       berupa JSON Schema.
-- [ ] Uji keempat template. Cek `summary_source == "llm"` dan jumlah warning "tanpa sumber".
-- [ ] Catat `timings` per tahap untuk rekaman 3, 5, dan 10 menit di `docs/benchmark.md`.
+      _Catatan: Ollama 0.40.15 (winget, user scope)._
+- [x] Uji keempat template. Cek `summary_source == "llm"` dan jumlah warning "tanpa sumber".
+      _Catatan: keempatnya `llm`, 0 warning. Ditemukan & diperbaiki bug schema tanpa `required`
+      (LLM mengeluarkan object minimal). Masih ada kesalahan klinis model 3B — lihat `docs/benchmark.md`._
+- [x] Catat `timings` per tahap untuk rekaman 3, 5, dan 10 menit di `docs/benchmark.md`.
 - **Selesai bila:** rangkuman valid untuk keempat template dan ada tabel latensi nyata.
+  _Status: terpenuhi dengan audio TTS. Uji ulang dengan rekaman mikrofon asli tertunda (pengujian
+  menyeluruh)._
 
 ## Fase 4 — LAN multi-laptop
 - [ ] mkcert untuk IP server, pasang rootCA di laptop client, buka port 8000 di firewall.

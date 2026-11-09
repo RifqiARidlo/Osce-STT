@@ -40,7 +40,7 @@ slot, audio IO), `app/api/` (routes), `app/static/` (UI tanpa build step), `scri
 ## Perintah
 ```bash
 pip install -r requirements.txt            # + requirements-optional.txt untuk pytest/matplotlib
-pytest -q                                   # 26 test CPU, harus tetap hijau
+pytest -q                                   # 27 test CPU, harus tetap hijau
 python scripts/generate_synthetic_text.py --n-per-template 25
 python scripts/train_text_intent.py --data data/synthetic/text_intent.jsonl
 python scripts/train_speaker_role.py --data runtime/training_data/speaker_role.jsonl --model svm
@@ -55,12 +55,14 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
   dan Silero VAD asli (faster-whisper 1.2.1).
 - SUDAH diuji di Fase 2: Faster-Whisper small GPU `int8_float16` (cuBLAS/cuDNN dari pip di `.venv`),
   hanya dengan audio TTS. Angka di `docs/benchmark.md`.
-- BELUM PERNAH dijalankan: Ollama asli (structured outputs), llama-cpp backend, ECAPA/speechbrain,
-  akses LAN/HTTPS dari laptop client, WER pada rekaman mikrofon asli.
+- SUDAH diuji di Fase 3: Ollama 0.40.15 + `qwen2.5:3b` structured outputs (4 template, 3/5/10 menit,
+  audio TTS). Schema LLM harus memakai `llm_json_schema()` (semua field `required`) + schema di prompt.
+- BELUM PERNAH dijalankan: llama-cpp backend, ECAPA/speechbrain, akses LAN/HTTPS dari laptop client,
+  WER & rangkuman pada rekaman mikrofon asli.
 - Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`
   (Fase 0, 23 test lolos tanpa perubahan kode).
 - Pelepasan VRAM CTranslate2: `close()` + gc melepas VRAM model (sisa ~90 MiB CUDA context). Swap ke
-  LLM asli belum diukur.
+  LLM berjalan (puncak ~2.5 GB). VRAM sisa naik ~8 MiB/job, perlu dipantau pada sesi panjang.
 
 ## Aturan kerja untuk agent
 - Sebelum mengubah kode: cek struktur folder, `git status`/`git diff`, dan baca file terkait.
