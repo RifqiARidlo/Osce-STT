@@ -21,7 +21,7 @@ from app.pipeline.stage2_asr import segment_words
 from app.pipeline.stage4_summarize import summarize
 from app.pipeline.stage5_finalize import VerificationError, verify_and_export
 from app.schemas.pipeline import ReviewPayload, SpeechRegion, Utterance, Word
-from app.schemas.templates import TEMPLATES, inline_json_schema
+from app.schemas.templates import TEMPLATES, inline_json_schema, llm_json_schema
 from app.storage.db import Repository
 from conftest import synth_dialogue
 
@@ -104,6 +104,34 @@ def test_denoise_and_energy_vad_find_segments():
 def test_inline_schema_has_no_refs():
     for spec in TEMPLATES.values():
         assert "$ref" not in json.dumps(inline_json_schema(spec.model))
+
+
+def test_llm_schema_requires_all_fields_and_is_in_prompt():
+    """Regresi: tanpa `required`, LLM boleh keluarkan object minimal -> semua field jadi default."""
+    def objects(node):
+        if isinstance(node, dict):
+            if node.get("type") == "object" and "properties" in node:
+                yield node
+            for v in node.values():
+                yield from objects(v)
+        elif isinstance(node, list):
+            for v in node:
+                yield from objects(v)
+
+    for spec in TEMPLATES.values():
+        schema = llm_json_schema(spec.model)
+        objs = list(objects(schema))
+        assert objs and all(set(o["required"]) == set(o["properties"]) for o in objs)
+
+    seen = {}
+
+    class SpyLLM(FakeLLM):
+        def generate_json(self, system, user, schema):
+            seen.update(user=user, schema=schema)
+            return super().generate_json(system, user, schema)
+
+    summarize(TEMPLATES["soap_umum"], _utts(), SpyLLM(json.dumps({"keluhan_utama": "Batuk"})))
+    assert seen["schema"]["required"] and '"keluhan_utama"' in seen["user"]
 
 
 def _utts():

@@ -14,7 +14,7 @@ from pydantic import BaseModel, ValidationError
 
 from app.llm.backends import LLMBackend, LLMError
 from app.schemas.pipeline import Utterance
-from app.schemas.templates import TD, EvidenceItem, TemplateSpec, evidence_fields, inline_json_schema
+from app.schemas.templates import TD, EvidenceItem, TemplateSpec, evidence_fields, llm_json_schema
 
 log = logging.getLogger(__name__)
 
@@ -31,7 +31,8 @@ ATURAN WAJIB:
 6. Field rubrik bernilai true hanya jika dokter benar-benar menanyakan/melakukan hal tersebut."""
 
 
-def build_user_prompt(spec: TemplateSpec, utterances: list[Utterance], locked: dict[str, Any]) -> str:
+def build_user_prompt(spec: TemplateSpec, utterances: list[Utterance], locked: dict[str, Any],
+                      schema: dict[str, Any] | None = None) -> str:
     lines = [f"Template: {spec.title} — {spec.description}"]
     if locked:
         lines.append("Parameter yang sudah dikunci pengguna (salin apa adanya): "
@@ -42,6 +43,9 @@ def build_user_prompt(spec: TemplateSpec, utterances: list[Utterance], locked: d
             continue
         text = u.text_normalized or u.text
         lines.append(f"[{u.id}] {u.role}/{u.intent}: {text}")
+    if schema is not None:
+        # Grammar hanya membatasi bentuk output; model perlu melihat nama, enum & deskripsi field.
+        lines.append("\nJSON Schema output:\n" + json.dumps(schema, ensure_ascii=False))
     lines.append("\nKeluarkan JSON sesuai schema.")
     return "\n".join(lines)
 
@@ -92,8 +96,8 @@ def summarize(spec: TemplateSpec, utterances: list[Utterance], llm: LLMBackend |
             warnings.append("Tidak ada utterance klinis (semua CHITCHAT).")
         return rule_based_summary(spec, utterances, locked).model_dump(), "fallback_rule", warnings
 
-    schema = inline_json_schema(spec.model)
-    user_prompt = build_user_prompt(spec, utterances, locked)
+    schema = llm_json_schema(spec.model)
+    user_prompt = build_user_prompt(spec, utterances, locked, schema)
     last_error = ""
     for attempt in range(max_retries + 1):
         prompt = user_prompt if not last_error else (

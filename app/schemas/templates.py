@@ -174,6 +174,24 @@ def inline_json_schema(model: type[BaseModel]) -> dict[str, Any]:
     return resolve(schema)
 
 
+def llm_json_schema(model: type[BaseModel]) -> dict[str, Any]:
+    """Schema untuk constrained decoding LLM: seperti inline_json_schema, tetapi SEMUA properti object
+    wajib (`required`). Tanpa ini, field ber-default bersifat opsional dan grammar mengizinkan LLM
+    mengeluarkan object minimal (mis. hanya `rubrik`), lalu sisanya terisi default "Tidak disebutkan".
+    """
+    def require_all(node: Any) -> Any:
+        if isinstance(node, dict):
+            node = {k: require_all(v) for k, v in node.items()}
+            if node.get("type") == "object" and "properties" in node:
+                node["required"] = list(node["properties"])
+            return node
+        if isinstance(node, list):
+            return [require_all(v) for v in node]
+        return node
+
+    return require_all(inline_json_schema(model))
+
+
 def evidence_fields(model: type[BaseModel]) -> list[str]:
     """Nama field bertipe list[EvidenceItem]."""
     out: list[str] = []
