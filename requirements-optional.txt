@@ -1,6 +1,8 @@
 # Opsional — pasang sesuai kebutuhan
 matplotlib>=3.8              # PNG confusion matrix untuk slide
 pytest>=8                    # unit test
+# nvidia-cublas-cu12>=12,<13 # Windows + GPU: DLL cuBLAS 12 untuk faster-whisper (~2 GB bersama cuDNN);
+# nvidia-cudnn-cu12>=9,<10   #   folder nvidia/*/bin didaftarkan otomatis oleh app/pipeline/stage2_asr.py
 # llama-cpp-python           # backend LLM alternatif (build CUDA: lihat README)
 # torch speechbrain          # ECAPA-TDNN (APP_USE_ECAPA=true)
 # sentence-transformers      # fitur IndoBERT untuk intent classifier (--embedding)

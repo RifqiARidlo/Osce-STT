@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import bisect
 import logging
+import os
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -31,11 +32,39 @@ def load_glossary_prompt(path: Path) -> str:
     return prompt[:MAX_PROMPT_CHARS].rsplit(",", 1)[0] + "."
 
 
+_nvidia_dirs_registered = False
+
+
+def register_nvidia_dll_dirs() -> list[str]:
+    """Windows: daftarkan DLL cuBLAS/cuDNN dari wheel pip `nvidia-*-cu12` (folder nvidia/*/bin).
+
+    ctranslate2 memuat cuBLAS secara dinamis, jadi folder ditambahkan ke os.add_dll_directory dan PATH.
+    No-op di non-Windows atau bila paket nvidia tidak terpasang.
+    """
+    global _nvidia_dirs_registered
+    if os.name != "nt" or _nvidia_dirs_registered:
+        return []
+    _nvidia_dirs_registered = True
+    try:
+        import nvidia  # namespace package dari nvidia-cublas-cu12 / nvidia-cudnn-cu12
+    except ImportError:
+        return []
+    dirs = sorted({str(p) for root in nvidia.__path__ for p in Path(root).glob("*/bin") if p.is_dir()})
+    for d in dirs:
+        os.add_dll_directory(d)
+    if dirs:
+        os.environ["PATH"] = os.pathsep.join(dirs + [os.environ.get("PATH", "")])
+        log.info("DLL NVIDIA didaftarkan: %s", dirs)
+    return dirs
+
+
 class WhisperASR:
     """Wrapper faster-whisper. Dimuat/dilepas oleh GpuModelSlot."""
 
     def __init__(self, model_name: str, device: str, compute_type: str, download_root: Path,
                  language: str = "id", beam_size: int = 5) -> None:
+        if device != "cpu":
+            register_nvidia_dll_dirs()
         from faster_whisper import WhisperModel
 
         self.language = language
