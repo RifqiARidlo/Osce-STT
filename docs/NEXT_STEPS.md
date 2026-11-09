@@ -31,13 +31,20 @@ Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu ko
   CHITCHAT dari transkrip rusak) jangan ikut dilatih — backup/hapus dulu.
 
 ## Fase 2 — GPU: Whisper + VAD asli
-- [ ] Verifikasi `from faster_whisper.vad import VadOptions, get_speech_timestamps` sesuai versi
+- [x] Verifikasi `from faster_whisper.vad import VadOptions, get_speech_timestamps` sesuai versi
       terpasang. Bila signature berbeda, sesuaikan `app/pipeline/stage1_preprocess.py::silero_vad`.
-- [ ] `APP_WHISPER_DEVICE=cuda`. Bila error cuBLAS/cuDNN: ikuti README faster-whisper. Laporkan ke user
+      _Catatan: cocok dengan faster-whisper 1.2.1, tanpa perubahan kode._
+- [x] `APP_WHISPER_DEVICE=cuda`. Bila error cuBLAS/cuDNN: ikuti README faster-whisper. Laporkan ke user
       sebelum memasang paket NVIDIA.
-- [ ] Jalankan 1 job sambil memantau `nvidia-smi -l 1`. Catat VRAM puncak dan apakah VRAM turun setelah
+      _Catatan: cuBLAS/cuDNN dipasang via pip di `.venv` (`nvidia-cublas-cu12`, `nvidia-cudnn-cu12`, ~2 GB),
+      DLL didaftarkan otomatis oleh `stage2_asr.register_nvidia_dll_dirs()`._
+- [x] Jalankan 1 job sambil memantau `nvidia-smi -l 1`. Catat VRAM puncak dan apakah VRAM turun setelah
       swap ke LLM.
+      _Catatan: puncak 993 MiB (+570 dari idle), turun ke +90 MiB setelah `close()`. Swap ke LLM asli
+      menunggu Ollama (Fase 3)._
 - **Selesai bila:** WER kualitatif wajar pada 2–3 rekaman, angka VRAM tercatat di `docs/benchmark.md`.
+  _Status: terpenuhi dengan 3 rekaman TTS (WER format-digit 3–15%). **Uji ulang dengan rekaman mikrofon
+  asli** masih tertunda (dijadwalkan pada pengujian menyeluruh)._
 
 ## Fase 3 — LLM asli (Ollama)
 - [ ] `ollama pull qwen2.5:3b`, `APP_LLM_BACKEND=ollama`. Pastikan versi Ollama mendukung `format`

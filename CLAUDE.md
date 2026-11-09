@@ -53,11 +53,14 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
 - SUDAH diuji di Fase 1 (CPU): lapisan FastAPI via `tests/test_api.py` (routes, upload, auth 401) dan
   manual di browser localhost (enroll, rekam, review, verify, `/cases`); Faster-Whisper small CPU int8
   dan Silero VAD asli (faster-whisper 1.2.1).
-- BELUM PERNAH dijalankan: Faster-Whisper di GPU, Ollama asli (structured outputs), llama-cpp backend,
-  ECAPA/speechbrain, akses LAN/HTTPS dari laptop client.
+- SUDAH diuji di Fase 2: Faster-Whisper small GPU `int8_float16` (cuBLAS/cuDNN dari pip di `.venv`),
+  hanya dengan audio TTS. Angka di `docs/benchmark.md`.
+- BELUM PERNAH dijalankan: Ollama asli (structured outputs), llama-cpp backend, ECAPA/speechbrain,
+  akses LAN/HTTPS dari laptop client, WER pada rekaman mikrofon asli.
 - Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`
   (Fase 0, 23 test lolos tanpa perubahan kode).
-- Pelepasan VRAM CTranslate2 saat swap: belum dapat dipastikan, verifikasi dengan `nvidia-smi`.
+- Pelepasan VRAM CTranslate2: `close()` + gc melepas VRAM model (sisa ~90 MiB CUDA context). Swap ke
+  LLM asli belum diukur.
 
 ## Aturan kerja untuk agent
 - Sebelum mengubah kode: cek struktur folder, `git status`/`git diff`, dan baca file terkait.
