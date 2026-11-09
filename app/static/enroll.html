@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enrollment Dokter · Medical STT</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<main>
+  <h1>Voice Enrollment Dokter</h1>
+  <div class="grid two">
+    <section class="card">
+      <h2>Rekam 15 detik</h2>
+      <label for="name">Nama dokter</label>
+      <input id="name" type="text" placeholder="dr. Nama Lengkap">
+      <p class="muted">Gunakan mikrofon &amp; posisi yang SAMA dengan saat konsultasi. Bacakan teks berikut dengan suara normal:</p>
+      <div class="reading">
+        Selamat pagi, saya dokter yang akan memeriksa Anda hari ini. Silakan ceritakan keluhan utama Anda.
+        Sudah berapa lama keluhan tersebut dirasakan? Apakah disertai demam, batuk, sesak napas, mual, atau muntah?
+        Saya akan memeriksa tekanan darah, nadi, suhu, dan saturasi oksigen. Hasil pemeriksaan menunjukkan
+        kondisi Anda stabil. Obat diminum tiga kali sehari sesudah makan, dan silakan kontrol kembali dalam tiga hari.
+      </div>
+      <div class="level" style="margin-top:12px"><div id="level"></div></div>
+      <div class="row" style="margin-top:10px">
+        <span id="timer" class="timer">15</span>
+        <button id="btn-rec" class="primary">● Mulai Rekam</button>
+        <button id="btn-save" disabled>Simpan Profil</button>
+      </div>
+      <audio id="preview" controls style="width:100%;margin-top:8px;display:none"></audio>
+      <div id="msg"></div>
+    </section>
+    <section class="card">
+      <h2>Profil terdaftar</h2>
+      <table><thead><tr><th>Nama</th><th>ID</th><th>Durasi ucapan</th><th>Dibuat</th></tr></thead><tbody id="list"></tbody></table>
+      <p class="muted">Profil menyimpan statistik fitur akustik (MFCC/F0/spectral) + embedding ECAPA bila aktif, bukan rekaman audio.</p>
+    </section>
+  </div>
+</main>
+<script type="module">
+import { api, el, header, notice } from "/static/js/api.js";
+import { WavRecorder } from "/static/js/recorder.js";
+header("/enroll");
+const $ = (id) => document.getElementById(id);
+const DURATION = 15;
+let blob = null;
+
+async function loadList() {
+  const docs = await api("/api/doctors");
+  $("list").replaceChildren(...docs.map((d) => el("tr", {}, el("td", { text: d.name }), el("td", { class: "mono", text: d.id }),
+    el("td", { text: `${d.enroll_seconds}s` }), el("td", { class: "muted", text: d.created_at.slice(0, 19).replace("T", " ") }))));
+}
+
+$("btn-rec").onclick = async () => {
+  const rec = new WavRecorder();
+  try { await rec.start(); } catch (e) { notice($("msg"), e.message, "err"); return; }
+  $("btn-rec").disabled = true; $("btn-save").disabled = true; $("msg").replaceChildren();
+  const t0 = performance.now();
+  const loop = setInterval(() => {
+    $("level").style.width = `${(rec.level() * 100).toFixed(0)}%`;
+    const left = DURATION - (performance.now() - t0) / 1000;
+    $("timer").textContent = Math.max(0, Math.ceil(left));
+  }, 80);
+  setTimeout(async () => {
+    clearInterval(loop);
+    blob = await rec.stop();
+    $("level").style.width = "0";
+    $("preview").src = URL.createObjectURL(blob); $("preview").style.display = "block";
+    $("btn-rec").disabled = false; $("btn-save").disabled = false;
+    notice($("msg"), "Dengarkan rekaman, lalu klik Simpan Profil (atau rekam ulang).");
+  }, DURATION * 1000);
+};
+
+$("btn-save").onclick = async () => {
+  const name = $("name").value.trim();
+  if (name.length < 2) { notice($("msg"), "Isi nama dokter.", "err"); return; }
+  const fd = new FormData(); fd.append("name", name); fd.append("audio", blob, "enroll.wav");
+  $("btn-save").disabled = true;
+  try {
+    const d = await api("/api/doctors", { method: "POST", form: fd });
+    notice($("msg"), `Profil tersimpan: ${d.name} (${d.enroll_seconds}s ucapan, ${d.n_chunks} chunk, ECAPA: ${d.has_embedding ? "ya" : "tidak"}).`, "ok");
+    loadList();
+  } catch (e) { notice($("msg"), e.message, "err"); $("btn-save").disabled = false; }
+};
+loadList();
+</script>
+</body>
+</html>

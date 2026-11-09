@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bank Kasus OSCE · Medical STT</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<main>
+  <div class="row" style="justify-content:space-between">
+    <h1>Bank Kasus OSCE</h1>
+    <button id="btn-export" class="primary">Ekspor JSONL</button>
+  </div>
+  <div id="msg"></div>
+  <div class="grid side">
+    <section class="card">
+      <h2>Kasus terverifikasi</h2>
+      <table><thead><tr><th>Kasus</th><th>Keluhan utama</th><th>Template</th></tr></thead><tbody id="list"></tbody></table>
+    </section>
+    <section class="card" id="detail"><p class="muted">Pilih kasus untuk melihat dual-view: skrip simulasi komunikasi &amp; kunci jawaban.</p></section>
+  </div>
+</main>
+<script type="module">
+import { api, el, header, notice } from "/static/js/api.js";
+header("/cases");
+const $ = (id) => document.getElementById(id);
+
+async function show(id) {
+  const c = await api(`/api/cases/${id}`);
+  $("detail").replaceChildren(
+    el("h2", { text: `Kasus ${c.id} · ${c.template_id}` }),
+    el("div", { class: "muted", text: `Diverifikasi ${c.metadata.verified_at} · koreksi intent: ${c.metadata.n_corrections_intent}, koreksi peran: ${c.metadata.n_corrections_role}` }),
+    el("div", { class: "grid two" },
+      el("div", {}, el("h3", { text: "Skrip simulasi komunikasi" }),
+        el("div", { class: "chat" }, c.transcript.map((u) => el("div", { class: `bubble ${u.role}` },
+          el("div", { class: "meta" }, el("b", { text: u.role }), el("span", { class: "muted", text: u.intent })), u.text)))),
+      el("div", {}, el("h3", { text: "Kunci jawaban / rubrik" }), el("pre", { class: "mono", style: "white-space:pre-wrap", text: JSON.stringify(c.summary, null, 2) }))));
+}
+
+async function load() {
+  const cases = await api("/api/cases");
+  if (!cases.length) { $("list").replaceChildren(el("tr", {}, el("td", { colspan: 3, class: "muted", text: "Belum ada kasus terverifikasi." }))); return; }
+  $("list").replaceChildren(...cases.map((c) => el("tr", { style: "cursor:pointer", onclick: () => show(c.id) },
+    el("td", { class: "mono", text: c.id }), el("td", { text: c.keluhan_utama }), el("td", { class: "muted", text: c.template_id }))));
+}
+
+$("btn-export").onclick = async () => {
+  try {
+    const token = localStorage.getItem("osce_access_token");
+    const res = await fetch("/api/cases/export.jsonl", { headers: token ? { "X-Access-Token": token } : {} });
+    if (!res.ok) throw new Error(`${res.status}`);
+    const url = URL.createObjectURL(await res.blob());
+    Object.assign(document.createElement("a"), { href: url, download: "osce_case_bank.jsonl" }).click();
+    URL.revokeObjectURL(url);
+  } catch (e) { notice($("msg"), `Ekspor gagal: ${e.message}`, "err"); }
+};
+load().catch((e) => notice($("msg"), e.message, "err"));
+</script>
+</body>
+</html>

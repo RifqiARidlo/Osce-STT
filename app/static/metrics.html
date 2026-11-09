@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluasi ML · Medical STT</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<main>
+  <div class="row" style="justify-content:space-between">
+    <h1>Academic ML Evaluation Panel</h1>
+    <div class="row"><span id="al" class="muted"></span><button id="btn-reload">Muat ulang model</button></div>
+  </div>
+  <div id="msg"></div>
+  <div class="grid two">
+    <section class="card" id="speaker_role"><h2>Modul 1 · Speaker Role Classifier (audio)</h2></section>
+    <section class="card" id="text_intent"><h2>Modul 2 · Clinical Utterance Classifier (teks)</h2></section>
+  </div>
+</main>
+<script type="module">
+import { api, el, header, notice, pct } from "/static/js/api.js";
+header("/metrics");
+const f3 = (x) => (x ?? 0).toFixed(3);
+
+function cmTable(m) {
+  const max = Math.max(1, ...m.confusion_matrix.flat());
+  return el("table", { class: "cm" },
+    el("tr", {}, el("th", { text: "true \\ pred" }), m.labels.map((l) => el("th", { text: l }))),
+    m.confusion_matrix.map((row, i) => el("tr", {}, el("th", { text: m.labels[i] }),
+      row.map((v, j) => el("td", { text: v, style: `background:rgba(${i === j ? "46,139,87" : "192,57,43"},${(v / max * 0.75).toFixed(2)})` })))));
+}
+
+function perClass(m) {
+  return el("table", {}, el("tr", {}, ["Kelas", "Precision", "Recall", "F1", "Support"].map((h) => el("th", { text: h }))),
+    Object.entries(m.per_class).map(([k, v]) => el("tr", {}, el("td", { text: k }), el("td", { text: f3(v.precision) }),
+      el("td", { text: f3(v.recall) }), el("td", { text: f3(v["f1-score"]) }), el("td", { text: v.support }))));
+}
+
+function render(id, data) {
+  const box = document.getElementById(id);
+  const title = box.querySelector("h2");
+  if (!data) {
+    box.replaceChildren(title, el("div", { class: "notice", text: "Belum ada metrics.json. Jalankan script training (lihat README)." }));
+    return;
+  }
+  const t = data.test;
+  box.replaceChildren(title,
+    el("div", { class: "muted", text: `model: ${data.model_kind} · dilatih ${data.trained_at} · data: ${data.data_summary || "-"}` }),
+    el("div", { class: "tiles" },
+      [["Accuracy (test)", pct(t.accuracy)], ["Macro F1 (test)", f3(t.macro_f1)], ["N test", t.n_samples],
+       ["CV macro F1", data.cv ? `${f3(data.cv.mean)} ± ${f3(data.cv.std)}` : "-"]]
+        .map(([k, v]) => el("div", { class: "tile" }, el("div", { class: "v", text: v }), el("div", { class: "k", text: k })))),
+    data.split_note ? el("div", { class: "notice", text: data.split_note }) : null,
+    el("h3", { text: "Confusion matrix (test set)" }), cmTable(t),
+    el("h3", { text: "Precision / Recall / F1 per kelas" }), perClass(t),
+    data.comparison ? el("div", {}, el("h3", { text: "Perbandingan model & baseline (test set)" }),
+      el("table", {}, el("tr", {}, ["Model", "Accuracy", "Macro F1"].map((h) => el("th", { text: h }))),
+        Object.entries(data.comparison).map(([k, v]) => el("tr", {}, el("td", { text: k }), el("td", { text: pct(v.accuracy) }), el("td", { text: f3(v.macro_f1) }))))) : null,
+    data.ablation ? el("div", {}, el("h3", { text: "Ablation fitur" }),
+      el("table", {}, el("tr", {}, ["Konfigurasi", "Macro F1"].map((h) => el("th", { text: h }))),
+        Object.entries(data.ablation).map(([k, v]) => el("tr", {}, el("td", { text: k }), el("td", { text: f3(v) }))))) : null);
+}
+
+async function load() {
+  const m = await api("/api/ml/metrics");
+  render("speaker_role", m.speaker_role);
+  render("text_intent", m.text_intent);
+  const c = m.active_learning_samples;
+  document.getElementById("al").textContent =
+    `Active learning: ${c["text_intent.jsonl"]} kalimat · ${c["speaker_role.jsonl"]} segmen audio terverifikasi`;
+}
+document.getElementById("btn-reload").onclick = async () => {
+  try { const r = await api("/api/ml/reload", { method: "POST" }); notice(document.getElementById("msg"), `Dimuat: speaker=${r.speaker}, intent=${r.intent}`, "ok"); load(); }
+  catch (e) { notice(document.getElementById("msg"), e.message, "err"); }
+};
+load().catch((e) => notice(document.getElementById("msg"), e.message, "err"));
+</script>
+</body>
+</html>

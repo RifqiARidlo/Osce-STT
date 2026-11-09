@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Sesi · Medical STT</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<main>
+  <div class="row" style="justify-content:space-between">
+    <h1 id="title">Review sesi</h1>
+    <label class="row" style="margin:0"><input id="toggle-ml" type="checkbox" checked> Academic ML Evaluation Panel</label>
+  </div>
+  <div id="status"></div>
+  <div id="content" class="grid two" style="display:none">
+    <section class="card">
+      <h2>Transkrip (Dokter ⟷ Pasien)</h2>
+      <div class="muted">Klik peran untuk menukar DOKTER/PASIEN. Ubah kelas via dropdown. Teks bisa diedit.</div>
+      <div id="ml-summary" class="ml-only muted" style="margin:8px 0"></div>
+      <div id="chat" class="chat"></div>
+    </section>
+    <section class="card">
+      <h2 id="form-title">Rangkuman terstandar</h2>
+      <div id="warnings"></div>
+      <div id="form"></div>
+      <div class="row" style="margin-top:14px">
+        <button id="btn-draft">Simpan Draft</button>
+        <button id="btn-verify" class="primary">Verifikasi &amp; Ekspor ke Bank Kasus OSCE</button>
+      </div>
+      <div id="save-msg"></div>
+      <details class="ml-only" style="margin-top:12px"><summary class="muted">Timing per tahap &amp; model</summary><pre id="timings" class="mono"></pre></details>
+    </section>
+  </div>
+</main>
+<script type="module" src="/static/js/page-review.js"></script>
+</body>
+</html>

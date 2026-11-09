@@ -1,0 +1,38 @@
+# Glosarium initial_prompt Whisper (urut prioritas; dipotong otomatis ~700 karakter).
+anamnesis
+keluhan utama
+sejak kapan
+demam
+batuk berdahak
+sesak napas
+nyeri dada
+mual muntah
+diare
+pusing
+tekanan darah
+nadi
+suhu
+saturasi oksigen
+mmHg
+auskultasi
+ronkhi
+wheezing
+vesikuler
+nyeri tekan epigastrium
+diagnosis
+ISPA
+pneumonia
+tuberkulosis
+asma
+hipertensi
+diabetes melitus
+dispepsia
+gastroenteritis
+paracetamol
+amoksisilin
+antasida
+OAT
+kontrol
+rujuk
+rontgen thorax
+cek darah lengkap

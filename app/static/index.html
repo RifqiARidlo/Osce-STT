@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rekam Sesi · Medical STT</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<main>
+  <h1>Rekam Sesi Konsultasi</h1>
+  <div class="grid side">
+    <section class="card">
+      <h2>1 · Konfigurasi sesi</h2>
+      <label for="doctor">Profil dokter (voice anchor)</label>
+      <select id="doctor"></select>
+      <div class="muted">Belum terdaftar? <a href="/enroll">Enrollment suara dokter</a></div>
+      <label for="template">Standar template penulisan</label>
+      <select id="template"></select>
+      <div id="template-desc" class="muted"></div>
+      <h3>Parameter terkunci (opsional)</h3>
+      <div id="locked" class="muted">Pilih nilai untuk mengunci; "Tidak disebutkan" = diisi otomatis.</div>
+      <label for="names">Nama yang wajib dianonimkan (pisahkan koma)</label>
+      <input id="names" type="text" placeholder="mis. Budi Santoso, Siti">
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>2 · Perekaman (1 mikrofon di tengah meja)</h2>
+        <canvas id="wave" class="wave"></canvas>
+        <div class="row" style="margin-top:10px">
+          <span id="timer" class="timer">00:00</span>
+          <button id="btn-start" class="primary">● Mulai Rekam</button>
+          <button id="btn-stop" class="danger" disabled>■ Selesai &amp; Proses</button>
+          <span class="muted">atau</span>
+          <label class="row" style="margin:0"><input id="file" type="file" accept="audio/*,.wav,.webm,.mp3,.m4a,.ogg"></label>
+          <button id="btn-upload">Unggah &amp; Proses</button>
+        </div>
+        <div id="rec-msg"></div>
+        <div class="muted">SOP: hindari bicara bersamaan; beri jeda singkat saat bergantian bicara (meningkatkan akurasi pemisahan peran).</div>
+      </div>
+
+      <div class="card">
+        <h2>3 · Antrean server &amp; job saya</h2>
+        <div id="queue" class="muted">memuat…</div>
+        <table>
+          <thead><tr><th>Job</th><th>Template</th><th>Status</th><th>Tahap</th><th>Dibuat</th><th></th></tr></thead>
+          <tbody id="jobs"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</main>
+<script type="module" src="/static/js/page-record.js"></script>
+</body>
+</html>

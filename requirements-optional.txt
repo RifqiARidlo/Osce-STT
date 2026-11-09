@@ -1,0 +1,6 @@
+# Opsional — pasang sesuai kebutuhan
+matplotlib>=3.8              # PNG confusion matrix untuk slide
+pytest>=8                    # unit test
+# llama-cpp-python           # backend LLM alternatif (build CUDA: lihat README)
+# torch speechbrain          # ECAPA-TDNN (APP_USE_ECAPA=true)
+# sentence-transformers      # fitur IndoBERT untuk intent classifier (--embedding)
