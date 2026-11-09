@@ -4,9 +4,9 @@ Kerjakan berurutan. Tiap fase punya kriteria selesai. Centang `[x]` setelah lolo
 Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu konfirmasi user.
 
 ## Fase 0 — Setup repo & environment
-- [ ] `git init`, lalu commit awal: `chore: initial import of osce-stt scaffold`
-- [ ] Buat venv Python 3.10/3.11, `pip install -r requirements.txt -r requirements-optional.txt`
-- [ ] `pytest -q` → 23 passed. Bila gagal karena beda versi library: perbaiki kompatibilitasnya, jangan
+- [x] `git init`, lalu commit awal: `chore: initial import of osce-stt scaffold`
+- [x] Buat venv Python 3.10/3.11, `pip install -r requirements.txt -r requirements-optional.txt`
+- [x] `pytest -q` → 23 passed. Bila gagal karena beda versi library: perbaiki kompatibilitasnya, jangan
       melonggarkan assertion test.
 - **Selesai bila:** test hijau di Python target.
 
