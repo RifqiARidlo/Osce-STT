@@ -11,15 +11,24 @@ Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu ko
 - **Selesai bila:** test hijau di Python target.
 
 ## Fase 1 — Smoke test HTTP tanpa GPU (lapisan yang belum pernah dijalankan)
-- [ ] `.env`: `APP_WHISPER_DEVICE=cpu`, `APP_WHISPER_COMPUTE_TYPE=int8`, `APP_LLM_BACKEND=none`
-- [ ] `uvicorn app.main:app --port 8000` (localhost, HTTP). Cek `/api/health`, `/docs`, semua halaman
+- [x] `.env`: `APP_WHISPER_DEVICE=cpu`, `APP_WHISPER_COMPUTE_TYPE=int8`, `APP_LLM_BACKEND=none`
+- [x] `uvicorn app.main:app --port 8000` (localhost, HTTP). Cek `/api/health`, `/docs`, semua halaman
       (`/`, `/enroll`, `/review`, `/metrics`, `/cases`) tanpa error di console browser.
-- [ ] Enrollment 15 detik → profil tersimpan. Rekam sesi 1–2 menit (role-play) → job `done`.
-- [ ] Review: tukar peran, ganti kelas, simpan draft, verifikasi → kasus muncul di `/cases`, baris baru
+      _Catatan: semua route + 6 aset JS/CSS = 200. Satu-satunya 404: `/favicon.ico` dan
+      `/.well-known/appspecific/com.chrome.devtools.json` (request otomatis browser/DevTools)._
+- [x] Enrollment 15 detik → profil tersimpan. Rekam sesi 1–2 menit (role-play) → job `done`.
+      _Catatan: enrollment 13.4 s ucapan → anchor tersimpan, rekaman dihapus. Sesi uji hanya 21 s,
+      1 pembicara (tidak ada partner role-play). Silero VAD asli + Whisper small CPU int8 berjalan
+      (ASR 4.7 s); transkrip berkualitas rendah — dievaluasi ulang di Fase 2._
+- [x] Review: tukar peran, ganti kelas, simpan draft, verifikasi → kasus muncul di `/cases`, baris baru
       di `runtime/training_data/*.jsonl`.
-- [ ] Tambahkan test API dengan `fastapi.testclient.TestClient` (ASR/LLM di-mock seperti
+      _Catatan: tukar peran, draft, verifikasi, `/cases`, 7+7 baris jsonl lolos manual di browser.
+      Ganti kelas hanya diverifikasi lewat `tests/test_api.py` (belum diuji manual di UI)._
+- [x] Tambahkan test API dengan `fastapi.testclient.TestClient` (ASR/LLM di-mock seperti
       `tests/test_pipeline.py`) untuk: submit job, get job (`light=true`), review, verify, auth token 401.
 - **Selesai bila:** alur penuh berjalan di browser lokal dan test API ikut hijau.
+- **Sebelum Fase 5:** data smoke test di `runtime/` (dokter uji, 1 kasus, 7 baris jsonl berlabel
+  CHITCHAT dari transkrip rusak) jangan ikut dilatih — backup/hapus dulu.
 
 ## Fase 2 — GPU: Whisper + VAD asli
 - [ ] Verifikasi `from faster_whisper.vad import VadOptions, get_speech_timestamps` sesuai versi

@@ -40,7 +40,7 @@ slot, audio IO), `app/api/` (routes), `app/static/` (UI tanpa build step), `scri
 ## Perintah
 ```bash
 pip install -r requirements.txt            # + requirements-optional.txt untuk pytest/matplotlib
-pytest -q                                   # 23 test CPU, harus tetap hijau
+pytest -q                                   # 26 test CPU, harus tetap hijau
 python scripts/generate_synthetic_text.py --n-per-template 25
 python scripts/train_text_intent.py --data data/synthetic/text_intent.jsonl
 python scripts/train_speaker_role.py --data runtime/training_data/speaker_role.jsonl --model svm
@@ -50,11 +50,13 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
 ## Status verifikasi (per pembuatan awal)
 - SUDAH diuji (CPU, model palsu untuk ASR/LLM): fitur audio, speaker heuristik & terlatih, intent,
   lexicon, PII, schema, retry/fallback LLM, memory swap, antrean, end-to-end + verifikasi + training.
-- BELUM PERNAH dijalankan: lapisan FastAPI (HTTP routes, upload, auth middleware), Faster-Whisper asli
-  (GPU/CPU), `faster_whisper.vad.get_speech_timestamps` asli, Ollama asli (structured outputs),
-  llama-cpp backend, ECAPA/speechbrain, UI browser (JS hanya dicek sintaks dengan `node --check`).
-- Dikembangkan di Python 3.13 + scikit-learn 1.9. Target user: Python 3.10/3.11 → kompatibilitas
-  library harus dicek saat install.
+- SUDAH diuji di Fase 1 (CPU): lapisan FastAPI via `tests/test_api.py` (routes, upload, auth 401) dan
+  manual di browser localhost (enroll, rekam, review, verify, `/cases`); Faster-Whisper small CPU int8
+  dan Silero VAD asli (faster-whisper 1.2.1).
+- BELUM PERNAH dijalankan: Faster-Whisper di GPU, Ollama asli (structured outputs), llama-cpp backend,
+  ECAPA/speechbrain, akses LAN/HTTPS dari laptop client.
+- Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`
+  (Fase 0, 23 test lolos tanpa perubahan kode).
 - Pelepasan VRAM CTranslate2 saat swap: belum dapat dipastikan, verifikasi dengan `nvidia-smi`.
 
 ## Aturan kerja untuk agent
