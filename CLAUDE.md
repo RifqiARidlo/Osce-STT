@@ -57,6 +57,9 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
   hanya dengan audio TTS. Angka di `docs/benchmark.md`.
 - SUDAH diuji di Fase 3: Ollama 0.40.15 + `qwen2.5:3b` structured outputs (4 template, 3/5/10 menit,
   audio TTS). Schema LLM harus memakai `llm_json_schema()` (semua field `required`) + schema di prompt.
+- SUDAH diuji di Fase 5 (sebagian): generator data `qwen2.5:7b` (wajib temperature > 0 + `num_predict`;
+  temperature 0 membuat model looping), audit label, evaluasi intent E1–E3 pada data sintetis.
+  Hasil di `docs/LAPORAN_EVALUASI.md`, cara reproduksi di `docs/EVALUASI.md`. ML-1 belum dilatih (belum ada role-play).
 - BELUM PERNAH dijalankan: llama-cpp backend, ECAPA/speechbrain, akses LAN/HTTPS dari laptop client,
   WER & rangkuman pada rekaman mikrofon asli.
 - Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`
