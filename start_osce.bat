@@ -43,7 +43,7 @@ set /a tries=0
 :wait_url
 timeout /t 2 /nobreak >nul
 if exist runtime\tunnel.log (
-  for /f "usebackq delims=" %%L in (`powershell -NoProfile -Command "(Select-String -Path 'runtime\tunnel.log' -Pattern 'https://[a-z0-9-]+\.trycloudflare\.com' | Select-Object -First 1).Matches.Value"`) do set "URL=%%L"
+  for /f "usebackq delims=" %%L in (`powershell -NoProfile -Command "(Select-String -Path 'runtime\tunnel.log' -Pattern 'https://[a-z0-9]+(-[a-z0-9]+)+\.trycloudflare\.com' | Select-Object -First 1).Matches.Value"`) do set "URL=%%L"
 )
 if defined URL goto :url_ok
 set /a tries+=1
