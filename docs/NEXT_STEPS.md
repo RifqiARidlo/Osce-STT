@@ -59,6 +59,9 @@ Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu ko
   menyeluruh)._
 
 ## Fase 4 — LAN multi-laptop
+_Keputusan 2026-11-16 (user): server dipindah ke komputer lab dan diakses publik lewat Cloudflare Quick
+Tunnel (`start_osce.bat`, `docs/INSTALASI_LAB.md`). Konsekuensi: sistem tidak offline selama mode tunnel;
+hanya untuk role-play fiktif. Mode LAN di bawah tetap tersedia untuk data sensitif._
 - [ ] mkcert untuk IP server, pasang rootCA di laptop client, buka port 8000 di firewall.
       _Sisi server siap (2026-11-09): mkcert 1.4.4, `cert.pem`/`key.pem` untuk `10.127.19.183`,
       `LEPI-RIDLO`, `localhost`, `127.0.0.1` (berlaku s.d. 9 Feb 2029). Rantai TLS terverifikasi terhadap

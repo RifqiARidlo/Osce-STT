@@ -5,6 +5,8 @@ Panduan praktis untuk hari pengujian dengan data nyata (role-play). Setiap langk
 bukan hanya diikuti.
 
 Dokumen terkait:
+- [`INSTALASI_LAB.md`](INSTALASI_LAB.md): memasang server di komputer lab + URL publik Cloudflare.
+- [`BELAJAR_SISTEM.md`](BELAJAR_SISTEM.md): cara kerja tiap tahap, alasan, dan parameter.
 - [`EVALUASI.md`](EVALUASI.md): protokol evaluasi dan arti tiap eksperimen (E1–E4).
 - [`LAPORAN_EVALUASI.md`](LAPORAN_EVALUASI.md): hasil yang sudah ada dan bagian yang masih kosong.
 - README §4–5: detail akses LAN dan alur aplikasi.
@@ -48,6 +50,9 @@ plus **3–5 sesi untuk WER**. WER boleh memakai sesi yang sama.
 
 ### 1. Backup & reset `runtime/` (sekali, sebelum sesi pertama)
 
+Langkah ini untuk **laptop pengembangan** yang berisi data uji lama. Di komputer lab yang baru dipasang
+dengan `setup_lab.ps1`, `runtime/` masih kosong: langsung ke §2.
+
 **Lakukan** (server dalam keadaan mati):
 ```powershell
 $bk = "runtime\_backup_pre_roleplay_$(Get-Date -Format yyyyMMdd)"
@@ -64,7 +69,12 @@ bukan dihapus, jadi bisa dikembalikan. Server membuat database baru otomatis saa
 
 ### 2. Nyalakan server
 
-**Lakukan:**
+**Di komputer lab dengan Cloudflare (cara yang dipakai kelompok):** klik dua kali `start_osce.bat`.
+Server dan tunnel menyala, lalu URL `https://xxxx.trycloudflare.com` ditampilkan. Langsung lanjut ke §4
+dan pakai URL itu di semua perangkat; §3 tidak diperlukan. Detail dan konsekuensinya (sistem tidak lagi
+offline): [`INSTALASI_LAB.md`](INSTALASI_LAB.md) §5.
+
+**Mode LAN dengan sertifikat mkcert (alternatif):**
 ```powershell
 ollama list                      # harus ada qwen2.5:3b (dipakai server untuk rangkuman)
 nvidia-smi                       # cek GPU terdeteksi
@@ -84,7 +94,10 @@ memakai heuristik anchor, lalu dikoreksi manual di review.
   mati, rangkuman jatuh ke mode fallback (tanpa LLM), tetapi transkrip dan klasifikasi tetap jalan.
 - Token akses ada di `.env` (`APP_ACCESS_TOKEN`). Browser meminta token sekali; bagikan hanya ke anggota.
 
-### 3. Siapkan akses
+### 3. Siapkan akses (hanya mode LAN)
+
+Dengan Cloudflare tunnel, langkah ini dilewati: HTTPS dari Cloudflare sudah sah, sehingga mikrofon
+langsung diizinkan di laptop/HP mana pun.
 
 **Opsi A — semua rekaman di laptop server (paling cepat).** Buka `https://localhost:8000` di Chrome
 laptop server. Tidak perlu langkah tambahan.

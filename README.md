@@ -4,6 +4,11 @@ Sistem client–server di LAN. **Hanya laptop server yang butuh GPU.** Laptop do
 membuka browser (Chrome/Edge/Firefox terbaru): perekaman, encoding WAV 16 kHz, dan UI review berjalan
 di browser. Semua inferensi (Whisper, 2 model Custom ML, LLM) berjalan di server, tanpa internet.
 
+**Mulai dari sini:** instalasi komputer lab + URL publik Cloudflare → [`docs/INSTALASI_LAB.md`](docs/INSTALASI_LAB.md) ·
+pengujian data nyata → [`docs/TUTORIAL_TESTING.md`](docs/TUTORIAL_TESTING.md) ·
+cara kerja & alasan tiap tahap → [`docs/BELAJAR_SISTEM.md`](docs/BELAJAR_SISTEM.md).
+Mode Cloudflare tunnel membuat sistem **tidak lagi offline** (audio melewati Cloudflare): hanya untuk data fiktif.
+
 ```
  Laptop dokter (browser, spesifikasi rendah)            Laptop server (GPU 4–6 GB)
  ┌──────────────────────────────┐   HTTPS/LAN   ┌────────────────────────────────────────────┐
@@ -68,6 +73,8 @@ tests/                   23 unit/integration test (CPU, tanpa GPU/model)
 ---
 
 ## 3. Instalasi server (laptop dengan GPU)
+
+Cara otomatis di Windows: `scripts\windows\setup_lab.ps1` (lihat `docs/INSTALASI_LAB.md`). Langkah manual:
 
 **Prasyarat:** Python 3.10/3.11, driver NVIDIA terbaru, ffmpeg di PATH (hanya untuk unggah non-WAV).
 

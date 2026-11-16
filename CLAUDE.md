@@ -62,6 +62,9 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
   Hasil di `docs/LAPORAN_EVALUASI.md`, cara reproduksi di `docs/EVALUASI.md`, langkah uji data nyata di
   `docs/TUTORIAL_TESTING.md` (alat: `roleplay_status.py`, `eval_wer.py`, `audit_llm_labels.py`).
   ML-1 belum dilatih (belum ada role-play). `eval_wer.py` baru diuji dengan audio TTS.
+- Akses publik (keputusan user 2026-11-16): Cloudflare Quick Tunnel via `start_osce.bat`; server di
+  127.0.0.1 tanpa TLS, token wajib. Melanggar premis offline -> hanya data fiktif. Instalasi lab:
+  `scripts/windows/setup_lab.ps1` + `docs/INSTALASI_LAB.md`. Materi belajar: `docs/BELAJAR_SISTEM.md`.
 - BELUM PERNAH dijalankan: llama-cpp backend, ECAPA/speechbrain, akses LAN/HTTPS dari laptop client,
   WER & rangkuman pada rekaman mikrofon asli.
 - Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`
