@@ -1,7 +1,7 @@
 # LAPORAN EVALUASI — Fase 5 (per 2026-11-16)
 
 Laporan hasil evaluasi dua modul ML yang dilatih sendiri. Cara mereproduksi setiap angka ada di
-[`EVALUASI.md`](EVALUASI.md). Angka mentah ada di `reports/text_intent/<eksperimen>/metrics.json`.
+[`EVALUASI.md`](EVALUASI.md); langkah pengujian dengan data nyata ada di [`TUTORIAL_TESTING.md`](TUTORIAL_TESTING.md). Angka mentah ada di `reports/text_intent/<eksperimen>/metrics.json`.
 
 **Status ringkas**
 
@@ -164,7 +164,8 @@ pada subset PASIEN/`S_KELUHAN` kemungkinan jauh di atas estimasi rata-rata 18%. 
 - skor E2 (dan bagian LLM di E3) **pesimistis** untuk kelas CHITCHAT/P pada ucapan pasien;
 - model yang dilatih dengan data LLM ikut belajar bias "pasien = keluhan".
 
-Rekomendasi: tinjau manual seluruh 217 baris PASIEN berlabel `S_KELUHAN` di data LLM. Jangan memakai
+Rekomendasi: tinjau manual seluruh 212 baris PASIEN yang saat ini berlabel `S_KELUHAN` di data LLM
+(alat dan langkahnya: `TUTORIAL_TESTING.md` §13). Jangan memakai
 prediksi model untuk memilih baris yang dikoreksi; itu membuat label test bergantung pada model.
 
 Penurunan dari CV ke E2 memberi gambaran kasar penurunan saat pindah ke percakapan nyata. Karena itu E4
@@ -192,7 +193,7 @@ heuristik anchor, dan ablation relatif vs absolut.
 | # | Langkah | Siapa | Output |
 |---|---|---|---|
 | 1 | Tinjau ulang `data/synthetic/audit_llm_labels.jsonl` (50 baris) | anggota kelompok | konfirmasi angka 82% |
-| 1b | Tinjau 217 baris PASIEN/`S_KELUHAN` di data LLM (§3.5), lalu ulangi E2/E3 | anggota kelompok | data LLM lebih bersih |
+| 1b | Tinjau 212 baris PASIEN/`S_KELUHAN` di data LLM (§3.5), lalu ulangi E2/E3 | anggota kelompok | data LLM lebih bersih |
 | 2 | Role-play ≥ 3 dokter × ≥ 4 sesi, verifikasi di `/review` | kelompok | `runtime/training_data/*.jsonl` |
 | 3 | E4: latih sintetis, uji `human_verified` | agent/kelompok | metrik intent pada data nyata |
 | 4 | Training & evaluasi ML-1 | agent/kelompok | `models/speaker_role/metrics.json` + PNG |

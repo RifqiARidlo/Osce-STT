@@ -1,7 +1,8 @@
 # EVALUASI — panduan step by step (Fase 5)
 
 Panduan ini menjelaskan cara **mereproduksi** seluruh evaluasi dua modul ML yang dilatih sendiri.
-Hasil angka dan interpretasinya ada di [`LAPORAN_EVALUASI.md`](LAPORAN_EVALUASI.md).
+Hasil angka dan interpretasinya ada di [`LAPORAN_EVALUASI.md`](LAPORAN_EVALUASI.md). Tutorial praktis hari
+pengujian (server, enroll, rekam, review, WER, troubleshooting) ada di [`TUTORIAL_TESTING.md`](TUTORIAL_TESTING.md).
 
 Semua perintah dijalankan dari root repo di laptop server, dengan venv aktif
 (`.venv\Scripts\activate` di Windows). Contoh memakai `python`; di Git Bash pakai `.venv/Scripts/python.exe`.
@@ -131,7 +132,9 @@ Langkah per dokter:
    **Verifikasi**. Baris otomatis ditambahkan ke:
    - `runtime/training_data/speaker_role.jsonl` (vektor fitur + label peran),
    - `runtime/training_data/text_intent.jsonl` (`source=human_verified`).
-5. Catat di lembar kerja: ID sesi, dokter, pemeran pasien, durasi, jumlah koreksi peran/intent.
+5. Catat di lembar kerja (`docs/templates/lembar_kerja_roleplay.csv`, salin ke `runtime/`): ID sesi,
+   dokter, pemeran pasien, durasi, kendala. Jumlah koreksi dihitung otomatis oleh
+   `python scripts/roleplay_status.py`.
 
 Jalur alternatif (manifest manual) untuk rekaman di luar aplikasi: lihat docstring
 `scripts/train_speaker_role.py` (format `manifest.jsonl`, mendukung `--augment N`). Rekaman harus mentah
@@ -161,6 +164,13 @@ bukan skor test (hindari memilih model dari test set).
 
 ---
 
+## 4b. WER rekaman mikrofon asli
+
+```bash
+python scripts/eval_wer.py        # pasangan runtime/wer/<nama>.wav + <nama>.txt -> reports/wer/wer_results.json
+```
+Cara menyimpan audio sementara dan aturan transkrip referensi: `TUTORIAL_TESTING.md` §8 dan §12.
+
 ## 5. Aktifkan model baru
 
 Buka `/metrics` → klik **Muat ulang model** (atau `POST /api/ml/reload` dengan token). Tidak perlu restart.
@@ -172,4 +182,5 @@ Halaman `/metrics` menampilkan isi `models/*/metrics.json`.
 - [ ] ML-2: E1–E3 (+ E4 setelah data nyata): accuracy, macro-F1, CV mean ± std, per kelas, confusion matrix.
 - [ ] ML-2: baseline (majority, keyword) dan ablation fitur.
 - [ ] ML-1: test (split dokter), CV, perbandingan model, baseline heuristik, ablation relatif vs absolut.
+- [ ] WER rekaman mikrofon asli (`reports/wer/wer_results.json`).
 - [ ] Keterbatasan: data sintetis, overlap speech, code-switching, jumlah dokter kecil.

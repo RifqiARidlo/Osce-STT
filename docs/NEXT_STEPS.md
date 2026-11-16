@@ -79,12 +79,14 @@ Agent: kerjakan SATU fase per sesi/permintaan, laporkan hasilnya, lalu tunggu ko
   _Perintah server: `uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-certfile cert.pem`._
 
 ## Fase 5 — Data & training (inti penilaian ML)
+_Langkah praktis sisa fase ini (reset runtime, enroll, rekam, review, cek status, training, WER):
+`docs/TUTORIAL_TESTING.md`._
 - [x] `scripts/generate_synthetic_llm.py --n-dialogs 60` (Ollama). Cek manual 50 baris acak, perbaiki
       label yang salah.
       _Catatan (2026-11-16): `qwen2.5:7b`, 60/60 dialog, 789 baris. Generator diperbaiki (temperature 0
       membuat model looping tanpa henti → file lama kosong). Audit 50 baris oleh agent: label LLM 82% benar,
       15 baris dikoreksi (`scripts/audit_llm_labels.py`). Perlu tinjauan ulang anggota kelompok, termasuk
-      217 baris PASIEN/`S_KELUHAN` yang noisy. Hasil E1–E3 di `docs/LAPORAN_EVALUASI.md`._
+      212 baris PASIEN/`S_KELUHAN` yang noisy. Hasil E1–E3 di `docs/LAPORAN_EVALUASI.md`._
 - [ ] Role-play terstruktur: ≥ 3 "dokter" berbeda × ≥ 4 sesi, pasien bervariasi, verifikasi via UI.
       _SOP di `docs/EVALUASI.md` §3. Menunggu kelompok (butuh manusia)._
 - [ ] `train_text_intent.py --test-source human_verified` (latih sintetis, uji data nyata).

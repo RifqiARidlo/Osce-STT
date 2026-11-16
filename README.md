@@ -156,7 +156,8 @@ Halaman: `/` rekam sesi · `/enroll` enrollment · `/review?job=<id>` · `/cases
 
 ## 6. Protokol training & evaluasi (untuk laporan mata kuliah)
 
-Panduan step by step: [`docs/EVALUASI.md`](docs/EVALUASI.md). Hasil terbaru: [`docs/LAPORAN_EVALUASI.md`](docs/LAPORAN_EVALUASI.md).
+Tutorial pengujian data nyata: [`docs/TUTORIAL_TESTING.md`](docs/TUTORIAL_TESTING.md). Protokol evaluasi:
+[`docs/EVALUASI.md`](docs/EVALUASI.md). Hasil terbaru: [`docs/LAPORAN_EVALUASI.md`](docs/LAPORAN_EVALUASI.md).
 
 **Modul 2 – Intent (teks).** `train_text_intent.py` melakukan split **berbasis grup** (template/dialog/job),
 GroupKFold-5, perbandingan dengan baseline *majority* & *keyword rule*, perbandingan LogReg vs LinearSVC,

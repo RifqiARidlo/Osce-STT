@@ -40,7 +40,7 @@ slot, audio IO), `app/api/` (routes), `app/static/` (UI tanpa build step), `scri
 ## Perintah
 ```bash
 pip install -r requirements.txt            # + requirements-optional.txt untuk pytest/matplotlib
-pytest -q                                   # 27 test CPU, harus tetap hijau
+pytest -q                                   # 31 test CPU, harus tetap hijau
 python scripts/generate_synthetic_text.py --n-per-template 25
 python scripts/train_text_intent.py --data data/synthetic/text_intent.jsonl
 python scripts/train_speaker_role.py --data runtime/training_data/speaker_role.jsonl --model svm
@@ -59,7 +59,9 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
   audio TTS). Schema LLM harus memakai `llm_json_schema()` (semua field `required`) + schema di prompt.
 - SUDAH diuji di Fase 5 (sebagian): generator data `qwen2.5:7b` (wajib temperature > 0 + `num_predict`;
   temperature 0 membuat model looping), audit label, evaluasi intent E1–E3 pada data sintetis.
-  Hasil di `docs/LAPORAN_EVALUASI.md`, cara reproduksi di `docs/EVALUASI.md`. ML-1 belum dilatih (belum ada role-play).
+  Hasil di `docs/LAPORAN_EVALUASI.md`, cara reproduksi di `docs/EVALUASI.md`, langkah uji data nyata di
+  `docs/TUTORIAL_TESTING.md` (alat: `roleplay_status.py`, `eval_wer.py`, `audit_llm_labels.py`).
+  ML-1 belum dilatih (belum ada role-play). `eval_wer.py` baru diuji dengan audio TTS.
 - BELUM PERNAH dijalankan: llama-cpp backend, ECAPA/speechbrain, akses LAN/HTTPS dari laptop client,
   WER & rangkuman pada rekaman mikrofon asli.
 - Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`

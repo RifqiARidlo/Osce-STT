@@ -1,0 +1,3 @@
+sep=;
+no;tanggal;job_id;kode_dokter;gender_dokter;kode_pasien;gender_pasien;template;kasus_skenario;durasi_menit;ruangan;perangkat_mikrofon;jarak_cm;ada_overlap;koreksi_peran;koreksi_intent;dipakai_WER;catatan
+CONTOH;2026-11-20;a1b2c3d4e5f6;D1;L;P3;P;osce_respirasi;ISPA, batuk 3 hari;3;Lab 2;laptop server bawaan;70;sedikit;2;5;ya;pasien bicara pelan di menit 2
