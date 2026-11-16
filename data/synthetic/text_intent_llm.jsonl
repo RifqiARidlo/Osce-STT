@@ -1,0 +1,789 @@
+{"text": "Selamat sore Pak, duduk aja deh.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Ya udah ya, akhir-akhir ini mata saya gak nyaman, renggang dan kemerahan.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Alhamdulillah sehat2 aja Pak. Boleh diliat mata beneran ga?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Ya udah, ayo liat.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Berkaca ke lampu ya Pak. Mata mata Anda agak kemerahan dan ada gatal2nya. Tekanan darahnya 130/85.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Tanda-tanda konjungtivitis, bisa aja karena bakteri atau virus. Alergi juga kemungkinan ada.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Oh ya? Apa obatnya Pak?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Saya resepin beberapa obat oles mata, dan cuci tangan dan wajah pakai sabun ya Pak. Jangan sampai menyebar ke mata lain.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_0", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Selamat pagi bro, mau cek apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Perut saya nyeri udah tiga hari, Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Biar ngerti lebih jelas, tekanan darahnya gini ya. 120/80.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Kelihatannya bisa jadi peradangan usus atau maybe adanya infeksi perut juga.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Saya resepin antibiotik dan obat pereda nyeri. Minum sebelum makan, ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Selain itu, jangan ngedrak-drengan makan pedas atau asam. Biar cepat sembuh.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Terus saya harus kontrol lagi kapan ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Kalau emang masih perih, jangan ragu2 kontrol aja. Nanti rencananya minggu depan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Semoga cepat sembuh bro. Apapun keluhannya, langsung informasi ke sini ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_1", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Selamat datang, mas. Ada yang nggak enak ya hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ya Dok, jantung saya kelihatan berdebar-debar terus.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oh begini ya, tolong duduk aja dulu. Saya cek tekanan darahmu dulu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Tanda vitalmu normal, tapi jantungnya berdebar-debar. Coba niatin ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Sudah-sudah Dok, biasa aja sih.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Kalau begitu, keluhan jantungnya mulai kapan?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Lagi-lagi ya, setiap pagi. Sampai males bangun.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Bisa nggak kasih detailnya? Apa aktivitas sehari-hari yang bikin jantung berdebar-debar?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Biasanya setelah ngerjain tugas, Dok. Tapi biasanya juga terasa saat duduk aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Nah ini menarik, mungkin ada aspek psikologis yang ikut berperan. Saya cek tekanan darahmu lagi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Tinggi ya Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "130 per 85, agak tinggi. Bisa jadi tekanan darah yang tinggi ini bikin jantungmu lebih bekerja keras.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Tapi nggak sakit ya Dok?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Belum mas, tapi sebaiknya kita atur tekanan darahmu. Bisa jadi ini awal gagal jantung.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Gagal jantung ya? Serius nggak Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Jangan terlalu panik dulu. Coba kita atur tekanan darahmu dengan obat. Nanti kita cek lagi.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Baik Dok, apa obatnya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Saya beri obat pengatur tekanan darah. Minum sebelum tidur dan setelah makan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Kayaknya banyak ya yang harus diubah, Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ya, sebaiknya lebih rajin olahraga dan hindari stres. Nanti kita rencanakan kontrol minggu depan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Baik Dok, terima kasih sudah bantu.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Sama-sama, semoga sehat. Jangan lupa ya rutin kontrol.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_2", "source": "synthetic_llm", "kasus": "gagal jantung", "audited": true}
+{"text": "Selamat pagi Pak, boleh duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Ya, dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis", "label_llm": "O_PEMERIKSAAN", "relabel_rule": "ack"}
+{"text": "Kemarin keluhannya apa?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Mata merah dan nyeri ya Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Apa sudah pemeriksaan mata sendiri? Tanda vital normal, 130/85.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "TAMPIL CONJUNCTIVITIS. PERLU OBAT.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Saya resepkan eye drop, diminum 4 kali sehari. Jangan goyang-goyang mata.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Apakah ada yang belum jelas? Kapan kontrol lagi?", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Tidak dok, jelas. 1 minggu kemudian ya.", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_3", "source": "synthetic_llm", "kasus": "konjungtivitis", "audited": true}
+{"text": "Selamat siang Pak, duduk saja.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Ada keluhan apa hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD", "audited": true}
+{"text": "Demam dan sesak nafas ya Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD", "audited": true}
+{"text": "Teleskop dulu, hasilnya 38 derajat.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Kuadrans dada, suara jernih. Tanda-tanda DBD?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Pemeriksaan ini cukup ya Pak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Ini gejala Difteri, perlu pemberian insulim.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Ambillah obat ini, ikuti petunjuk pada kemasan. Jaga kebersihan dan istirahat yang cukup.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_4", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Selamat siang Pak, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Perut terasa ngilu dari tadi pagi.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Oksigen 98%, ngeri ngga ya? Saya cek suhu dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Tidak, masih normal.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA", "audited": true}
+{"text": "Saya lihat tanda-tandanya ISPA. Darahnya 130/85.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA", "audited": true}
+{"text": "Perut sakit dari mana? Perih atau sembelit juga?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Perih, belum pernah sembelit.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Mungkin ISPA. Dosis ini saja aja ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA", "audited": true}
+{"text": "Minum obat sebelum makan nanti, jangan lupa juga minum banyak air.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_5", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Selamat pagi Bu, silakan duduk di kursi ini ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Halo Dok, saya rasa perut saya sakit dan terasa panas-panasan.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Oh, itu keluhan yang sering disebabkan oleh maag atau dispepsia. Saya akan cek tekanan darahnya dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Saya terus makan dan minum seperti biasa, tapi rasa sakitnya semakin parah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Hasil tekanan darah Anda normal, 120 per 80. Kemungkinannya memang bisa dispepsia atau maag. Bagaimana kalau kita beri obat antasida dulu? Ini supaya perut Anda lebih nyaman.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Tapi saya sering makan malam terlambat dan suka makanan pedas, Dok. Bisa juga karena itu kan?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Ya benar, gaya hidup seperti itu memang bisa memicu perut sakit. Cobalah hindari makanan pedas dan berat sebelum tidur ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia", "audited": true}
+{"text": "Saya cemas kalau ini bukan hanya dispepsia biasa, Dok. Apakah bisa jadi lebih serius?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Tidak perlu terlalu khawatir, Bu. Jika perut Anda tidak membaik dalam beberapa hari, barulah kita cek lebih lanjut. Saya rekomendasikan obat ini ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Jangan lupa juga minum air putih banyak dan jaga pola makan Anda.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia", "audited": true}
+{"text": "Baik Dok, terima kasih sudah memberi saya solusi ini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Sama-sama Bu. Jika ada perubahan, segera hubungi kami. Sampai jumpa ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_6", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Selamat pagi Pak, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Gula saya tinggi beberapa kali, Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ayo cek tekanan darah dulu ya. Saya lihat 130 per 85.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kondisi Anda masih dalam batas normal, tapi perlu waspada.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya, gula tinggi males minum obat.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Gula darah tinggi bisa berbahaya. Cek lagi besok ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selama ini diet dan olahraga sudah dilakukan?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya, lebih banyak makan sayur dan kurangi nasi.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik. Tambah latihan fisik juga. Saya tetap beri obat.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Obat ini satu kali sehari, pagi setelah sarapan. Jangan lupa cek gula darah rutin.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kalau perlu kontrol lagi bulan depan ya. Sampai jumpa.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_7", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selamat pagi Bu, bisa duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2", "audited": true}
+{"text": "Selamat pagi Dokter, anak saya kelihatan kurus-kurusan gitu.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Bisa tolong jelaskan sedikit lebih detail ya Bu? Apa yang dirasakan atau diamati?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya, terakhir tiga minggu ini. Dia kelihatan kurus dan sering minum air.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Saya lihat nanti ya, tekanan darahnya berapa hari ini?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2", "audited": true}
+{"text": "Tadi petugas kasir bilang 140/95.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kelihatan kurus dan tekanan darah tinggi, ini kemungkinan bisa terkait diabetes melitus tipe 2 ya Bu.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Jadi apa yang harus kita lakukan, Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kita cek beberapa hal lagi dulu. Berat badannya berapa hari ini?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2", "audited": true}
+{"text": "Tadi diukur 37 kg.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Berat badan turun ya? Saya lihat gula darahnya juga ya, hasil terakhirnya berapa?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Gula darahnya 150, Dok.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Sesuai dengan tekanan darah dan berat badannya. Kita resepkan obat dan harus rutin kontrol ya Bu.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Obatnya apa, Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kita beri metformin, diminum setelah makan. Juga harus rutin cek gula darah ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik Pak Dokter, saya akan jaga pola makan dan olahraganya juga.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Saya lihat kebiasaan sehari-hari juga penting. Jangan lupa kontrol rutin ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_8", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selamat siang Pak, boleh beri tahu saya apa keluhan terbaru Anda hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD", "audited": true}
+{"text": "Ya Dok, perut saya sakit dan kadang-kadang muntah. Saya merasa tidak nyaman.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Bisa kasih tahu lama keluhan Pak? Sudah sejak berapa hari ini ya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Sejak dua hari setelah makan malam. Saya merasa tidak baik.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Baik, saya periksa tekanan darahnya dulu ya. Tekanannya 128/76, di atas normal. Tanda vital lainnya bagaimana?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Denyut nadi saya cepat dan napas juga terasa panik. Saya merasa cemas.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Baik, jangan khawatir Pak. Hasil pemeriksaan ini normal selain tekanan darah. Kemungkinan ini bisa disebabkan oleh perut yang sakit saja. Tapi saya juga cek suhu tubuhnya. Suhu Anda normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Tidak usah khawatir Pak, ini biasa terjadi ketika ada masalah di perut. Kami bisa beri obat pereda nyeri dan anjuran untuk merawat diri. Saya rasa Anda tidak mengalami penyakit serius.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Dok, saya khawatir ini bisa jadi DBD ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Tidak perlu takut Pak. Saya lihat gejala-gejalanya tidak menunjukkan DBD. Namun untuk amannya, kalau Anda memiliki kontak dekat dengan pasien yang positif, sebaiknya lapor ke kesehatan setempat.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Ya ampun dok, ini bikin saya cemas banget. Saya takut terkena penyakit serius. Apakah bisa jadi masalah paru-paru saja?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Tidak perlu khawatir Pak, ini lebih mungkin karena peradangan di lambung atau gastritis. Saya beri obat penenang juga ya agar Anda bisa tidur nyenyak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Terima kasih Dok, saya akan ikuti anjuran Anda. Nanti saya cek suhu dan tekanan darah juga,", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Baik Pak, jangan lupa perbanyak minum air putih dan istirahat yang cukup. Kalau gejala-gejalanya tidak membaik segera hubungi kantor kami ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Baiklah Pak, semoga cepat pulih. Jaga diri Anda dan keluarga,", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_9", "source": "synthetic_llm", "kasus": "DBD"}
+{"text": "Selamat siang Pak, tolong duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung", "audited": true}
+{"text": "Selamat siang Dokter, saya terus bekerja di pabrik.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Bapak ada keluhan apa hari ini? Bisa jelaskan lebih detail ya.", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ya Dok, dada saya sering nyeri dan sesak napas. Saya sudah merasa begitu sejak semalam.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Saya cek tekanan darahnya dulu ya, hasilnya 135/80 mmHg.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oh iya Dok, saya merasa lelah juga. Tidur malam ini kurang enak.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Inilah hasil EKGnya, menunjukkan denyut jantung tidak stabil.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung", "audited": true}
+{"text": "Berdasarkan keluhan dan pemeriksaan, kemungkinan bapak mengalami gagal jantung akut.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Gagal jantung ya? Apa itu?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Gagal jantung terjadi saat jantung tidak dapat memompa darah dengan baik. Bapak perlu istirahat lebih banyak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ya Pak, tapi saya masih harus kerja di pabrik ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Saya akan beri obat natrium klorida dan angiotensin II inhibitor. Segera konsumsi obat tersebut setelah makan siang.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ya Dok, saya pastikan mengonsumsinya ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Selain itu, bapak perlu beristirahat lebih banyak dan hindari kelelahan. Jangan lupa kontrol kembali dalam tiga hari ke depan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oke Dokter, terima kasih atas penjelasannya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Tidak apa-apa Pak, jaga kesehatan ya. Saya harap bapak cepat pulih.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_10", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Selamat pagi Pak, teruskan dengan cerita keluhan Anda hari ini.", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK", "label_llm": "CHITCHAT", "audited": true}
+{"text": "Halo dokter, saya pernah merasakan perih di perut tiga hari lalu. Saya bekerja di pabrik dan banyak mengonsumsi makanan pedas.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Tentu Pak, kita cek tekanan darah Anda dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Hasilnya 120/80, tidak terlalu tinggi. Kemungkinan ini bisa jadi maag atau dispepsia akut.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Ya, saya sering makan di pabrik dan biasanya memang pedas. Bagaimana ya dok? Ini berbahaya tidak?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Tidak terlalu berbahaya Pak, tetapi perlu diperhatikan. Akan saya resepkan antasida untuk Anda.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Baik dokter, saya akan mengikutinya dengan baik.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Selain itu Pak, hindari makanan pedas dan jaga pola makan. Jika perih berlanjut, segera hubungi kembali.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_11", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Selamat datang Bu, tolong duduk saja.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Halo Dok, saya bawa si Kecil karena keluhan perutnya ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Bisa kasih tahu lebih detail tentang keluhannya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Perutnya sakit sejak kemarin, sering merasa ingin muntah juga.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis", "audited": true}
+{"text": "Tanda vitalnya bagaimana ya, Suhu normal? Tekanan darah sudah kita periksa tadi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Suhunya normal kok, 36.5 derajat. Tekanan darahnya 105/70.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Kondisi ini bisa jadi gastroenteritis, perlu pemeriksaan lebih lanjut ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Saya resepkan obat antidiare dan anti-nausea. Minum sebelum makan tiga kali sehari.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Baik Dok, saya akan berhati-hati dalam memasak makanannya. Terima kasih sudah bantuannya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Sama-sama Bu, pastikan si Kecil banyak minum air dan istirahat yang cukup ya. Kontrol kembali jika kondisi tidak membaik.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_12", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Halo Adi, mau nerusin obat diabetesmu ya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2", "label_llm": "CHITCHAT", "audited": true}
+{"text": "Ya Dok, sejak minggu lalu rasanya agak nggak semangat.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Biarpun nggak sakit parah, kita cek dulu tekanan darahmu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tebus nih Adi, tekanannya normal. Tapi perasaanmu itu ada hubungannya dengan gula darah?", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Bisa ya Dok? Saya sering kelaparan dan mual.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Hmm, bisa jadi begitu. Terus bagaimana dengan pola makanmu hari ini?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya udah gitu aja sih, nggak ada yang berbeda.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Gampang kok, kita tingkatkan asupan serat dan cek gula darahmu lagi.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kalau ada perubahan, cerita ke sini ya. Jaga kesehatan.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_13", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selamat pagi Pak, terima kasih sudah datang ke klinik kami.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Halo Dokter, saya rasa tidak enak badan beberapa hari ini. Saya cemas, dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Tenang dulu Pak, biar saya lihat keadaan Anda sekarang ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Bisakah Anda bilang berapa suhu badan Anda hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Saya pernah测序结果：39.2°C。", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Saya akan cek tekanan darah dan denyut nadi Anda.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Anda tampak sedikit lemas. Tekanan darah 120/80 mmHg, denyut nadi 96 detik per menit.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Saya merasa sangat lelah dan kurang minum air ya Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Berdasarkan keluhan dan pemeriksaan, kemungkinan ini bisa jadi tifoid. Akan saya beri obat antipiretik.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Saya akan berikan resep obat untuk Anda Pak, tetapi pastikan cukup minum air putih ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Jangan lupa istirahat yang cukup. Jika tidak membaik, periksa kembali dulu ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Oke Dokter, terima kasih banyak. Saya akan mengikuti anjuran Anda.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Sekarang perasaan Anda sudah lebih baik? Jaga diri ya Pak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_14", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Selamat siang Bu, silakan duduk dulu ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Selamat siang Dokter, anak saya keluhan kepala sakit terus ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Bisa cerita lebih detail gak Bu? Kapan mulai dan bagaimana gejalanya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Kemarin siang anak saya bilang kepala sakit. Saya cek, katanya seperti nyeri berulang.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Oke, saya pemeriksa tekanan darahnya dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Tejana darah normal Bu. Beberapa kali seperti ini? Bagaimana dengan pola tidur dan istirahatnya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Anak saya biasanya tidur cukup, tapi kemarin terlalu lama main game sampai larut malam.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Itu mungkin mempengaruhi. Kemungkinan ini migrain. Saya periksa fisiknya dulu ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Tidak ada keluhan yang mencurigakan di sini. Simpan saja, biasanya akan reda sendiri.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Migrain umumnya terjadi karena stres atau kurang tidur. Ayo kita coba pencegahannya ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain", "audited": true}
+{"text": "Baik Dokter, apakah ada obatnya? Anak saya gampang rewel kalau sakit kepala.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Untuk saat ini tidak perlu obat ya. Coba berikan istirahat yang cukup dan hindari stres.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Tapi kalau sakitnya terus, apa harus ke rumah sakit?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Kalau sakitnya berulang atau parah, bisa datang lagi ya. Saya rekomendasikan kontrol rutin.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Terima kasih Dokter, sudah mau bantu. Kalau perlu apa harus kembali ke sini?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Kalau sakitnya berulang atau ada perubahan, jangan ragu untuk datang lagi ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Ayo Bu, terus rawat anak dengan baik. Sampai jumpa.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Sampai jumpa Dokter, terima kasih atas bantuan dan nasihatnya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_15", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Selamat datang Pak, tolong duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Halo Dokter, saya ada sedikit cemas hari ini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Kemungkinan itu karena stres? Atau ada yang nggak enak ya di badanmu hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Ya, saya merasa sesak napas dan terasa sesak di dada. Saya juga batuk sejak kemarin.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Oke, biar lebih jelas, tolong tekanan darahmu ya, hasilnya 120/80. Tidak terlalu tinggi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Terus kalau batuk itu biasa Pak? Saya sering mengalami ini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Bisa jadi batuk tersebut disebabkan oleh infeksi paru-paru. Ayo kita lakukan pemeriksaan lebih lanjut ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Ya, saya juga nggak suka rasanya demam dan lemas. Nafas jadi terasa pendek juga.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Berdasarkan keluhanmu, kemungkinan ini bisa jadi TB paru-paru. Kita perlu cek lebih lanjut ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "TB itu berbahaya Pak? Saya nggak tahu harus ngapain.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Tidak perlu khawatir, kalau kita tangani tepat waktu, kemungkinan sembuhnya juga tinggi. Ayo kita pemeriksaan dulu ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Ya Pak, saya ikutin petunjuk Dokter.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Baiklah, kalau hasilnya memang TB paru-paru, kita akan berikan obat antibiotik. Jangan lupa minum obat secara rutin ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Ya Dokter, saya pasti taat pada anjuran Anda.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Selain itu, perbanyak istirahat dan makan makanan bergizi ya. Jangan lupa kontrol minggu depan untuk pengecekan lebih lanjut.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Ya Pak, terima kasih banyak Dokter.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Selalu di sini kalau ada yang nggak enak. Selamat berobat ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_16", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Selamat pagi Pak, tolong duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Assalamu'alaikum Dokter, apa kabar?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kabarnya baik Pak. Ada keluhan apa hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya Dok, gula darah saya lebih tinggi dari biasanya. Setelah check di rumah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik Pak, saya periksa tekanan darahnya dulu ya. Saya lihat tanda vital Anda juga.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tunggu Dok, sudah 15 menit. Tekanan darah saya 130/85 mmHg.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Hasil tekanan darah Anda dalam batas normal. Gula darahnya bagaimana?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Gula darah saya 160 mg/dL. Itu terlalu tinggi ya Dok.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya, memang cukup tinggi Pak. Anda mungkin mengalami hiperglikemia.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2", "audited": true}
+{"text": "Saya harus cek lagi ya, Dok? Atau ini masalah serius?", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tidak perlu khawatir Pak. Asalkan kita atur gula darah Anda kembali ke normal.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik Dok, bagaimana cara menurunkannya?", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Pak, penting untuk makan teratur dan menghindari makanan manis. Saya juga beri resep obat.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selain itu, coba olahraga ringan setiap hari dan minum air secukupnya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik Dok. Kalau gula darah saya masih tinggi, saya datang lagi ya?", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya Pak, kita kontrol kembali dalam 2 minggu. Jaga gula darah Anda ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_17", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2", "audited": true}
+{"text": "Selamat pagi Pak, silakan duduk.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ya dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia", "label_llm": "S_KELUHAN", "audited": true}
+{"text": "Apakah batuk dan sesak napas?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ada dok, batuk berdahak dan sesak ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Telescopi dulu ya, nafas jernih.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Denyut nadi 78 per menit, tekanan darah 120/80.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Pendengaran jantung normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ini ngepeti, kemungkinan pneumonia.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Saya resepkan antibiotik dan obat batuk, minum 3 kali sehari.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Hindari makan berat, banyak air ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Kontrol lagi minggu depan, udah ngerti?", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ya dok, sudah ngerti.", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Baik, sembuhkan diri ya Pak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_18", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Selamat siang Bu, udah apa-apa hari ini? Udah beneran nggak mau duduk ya?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh dokter, perut saya sakit gitu. Masa minta saya duduk, udah lama kan udah pake kursi.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Ntar saya cek tekanan darahnya dulu ya Bu. Saya ngecek dulu dulu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Perutnya perih gitu? Jauh dari mulut atau udah ke bawah?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Terus dok, saya emang perih di perut. Dari perut atas sampai perut bawah aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Bisakah Bu duduk ya? Saya mau cek tekanan darahnya dulu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh udah, saya nyetuhin sana dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis", "audited": true}
+{"text": "Hasilnya 125 per 78 ya Bu. Tidak terlalu tinggi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Mungkin ini masalah pencernaan, bisa maag atau dispepsia.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Masag? Dok, apa itu ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Itu ya Bu, peradangan di lambung. Saya beri obat anti-asam ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh udah. Obatnya pake kapan dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Obatnya diminum sebelum makan, jadi setelah Bapak bangun ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh udah. Masa saya nggak boleh ngedapin makanan pedas?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Pasiennya aja ya Bu, gara-gara itu bisa bikin perut panas. Hindari yang pedas.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh udah. Makasih Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Sama-sama Bu, jangan lupa konsumsi air putih banyak ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Kalau perutnya masih sakit atau emang lemot-lemot, datengin lagi ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_19", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Selamat siang Pak, tolong duduk saja.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Pak, ada apa hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Jantungnya sering berdebar-debar ya Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ayo kita cek dulu tanda vitalmu. Tekanan darah 130/85, nadi 96 per menit.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Kemungkinan gagal jantung bantu ini ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Saya beri obat beta bloker dan diuretik. Minum setiap hari, jangan lupa kontrol bulanan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Jaga pola makan juga, kurangi garam.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Kalau ada perubahan, hubungi kita ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oke Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung", "label_llm": "P_EDUKASI_TERAPI", "relabel_rule": "ack"}
+{"text": "Silakan Pak. Jaga dirimu.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_20", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Selamat pagi Ibu, duduk aja di sini ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Halo Dok, saya mau nanya tentang jantung saya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oke, ceritain aja apa yang terjadi dengan jantungnya.", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Baru-baru ini sering2 dada saya nyeri, biasanya setelah gerak-gerik banyak ya Dok. Saya juga merasa pusing dan lelah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Nanti saya cek tekanan darahnya dulu ya. Tekanannya sekarang 130 per 85.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Pengenalan jantungnya terus, Ibu. Kalau biasanya nyeri setelah gerak-gerik banyak itu,", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Ya, seperti yang saya cerita tadi Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Kemungkinan ini bisa jantung yang nggak nyaman. Nanti kita resepin obat ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oke Dok, kalau begini saya harus pergi ke rumah sakit? Atau cukup di sini saja?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Di sini aja dulu ya. Nanti kita resepin obatnya, Ibu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Inget ya, ntar diminum obatnya setiap hari sesuai anjuran.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Kalau masih nggak nyaman atau ada perubahan, bawa lagi ke sini ya. Saya rekomendasikan kontrol satu bulan sekali.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Oke Dok, terima kasih sudah membantu saya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Sama-sama Ibu, jaga diri ya. Sampai jumpa.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_21", "source": "synthetic_llm", "kasus": "gagal jantung"}
+{"text": "Selamat datang Bu, udah mana nih?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Assalamualaikum dok, udah mau sembuh aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Eh, udah betul-betul nggak nyaman di dada ya? Makanya datengin kita ini.", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Betul dok, sering ngesi-nesia dan sukar makan. Saya merasa nggak enak badan udah tiga hari.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ntar saya cek dulu tekanan darahnya. Terus langsung ke ruang pemeriksaan ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Tanda vitalnya bagus, BP 120/80, Suhu normal. Tapi ada bunyi rales di dada. Bisa jadi pneumonia.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Saya susulkan pemeriksaan lebih lanjut ke RS, tapi untuk sementara kita obati disini dulu ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ya Allah dok. Apa yang harus saya minum?", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Saya beri antibiotik dan inhaler ya Bu, dicontek dengan obat antipyrin kalau panas.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ya ampun dok. Ntar saya akan minum obatnya. Apa boleh saya dibilangin sama istri?", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Bisa aja, kan istri juga mau tahu apa sih yang nggak enak sama Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ntar kita resepin dulu obatnya ya. Kalau lebih parah atau nggak ada perbaikan, jangan ragu dateng kembali.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Oke dok, terima kasih sudah mau membantu saya. Saya akan cek ke apotik nanti.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Tinggal perawatan di rumah ya Bu. Jaga istirahat dan minum air cukup. Sampai jumpa.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_22", "source": "synthetic_llm", "kasus": "pneumonia"}
+{"text": "Ohaiyoo! Numpang nyari tempat aja? Atau mau konsultasi langsung?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK", "audited": true}
+{"text": "Hai Dok, saya cuma mau cek perutnya. Perih banget ya tadi pagi.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Oh begitu ya, biasanya berapa kali ya terjadi? Saya ngecek dulu tekanan darahnya.", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Tiga hari ini dok, setiap pagi sekitar jam 6-7. Tidak banyak minum dan makan aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Kayaknya agak sering sih. Saya tekanin dulu ya, hasilnya 125 per 80. Sehat-sehat saja nih.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Berarti bukan masalah jantung ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Gak usah panik, biasa aja. Kemungkinan ini bisa maag atau dispepsia. Tanda-tandanya cocok.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Ya gitu ya? Saya udah pernah coba obat antasida dok, tapi masih sakit.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Tentu aja, saya kasih obat lain yang lebih kuat. Minum sebelum makan dan hindari makanan pedas ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Oke Dok, terima kasih sudah bantu. Masa harus ke RS juga?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Gak perlu, tinggal ikuti anjuran aja. Jangan lupa kontrol minggu depan ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Baik dok, terima kasih banyak. Sampai jumpa.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Sekarang udah lebih lega, ya. Sampai jumpa nanti.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_23", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Selamat pagi Bu, mau bertanya apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Halo Dokter, anak saya keluhan perutnya sakit sudah beberapa hari.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Ah ya? Sudah berapa lama sih perutnya terasa nggak enak?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Sejak tiga hari, Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Baik, kita cek dulu tekanan darahnya. Nggak terlalu tinggi ya 120/80.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Mungkin ini bisa jadi dispepsia atau maag. Aneh ya, biasanya perutnya gimana?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Biasanya sehat kok, tiba-tiba sakit aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia", "audited": true}
+{"text": "Ternyata begitu. Nanti saya beri obat antasida ya, diminum sebelum makan dan hindari makanan pedas.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Baik Dokter, terima kasih sudah bantuannya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Tidak usah, senang bisa membantu. Jangan lupa kembali kontrol kalau perutnya masih nggak enak ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_24", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Selamat pagi Bu, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Tadi malam anak saya kelihatan mual dan berputar-putar di kepala, Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Bisa tunjukin kekuatannya, Bu? Saya cek vitalnya dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Iya, 150/98 dan nafasannya normal. Anak saya nggak terlalu panik, cuma kelihatan bingung.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Tanda-tanda vitalnya baik-baik saja. Kemungkinan ini vertigo atau kawatirnya dehidrasi.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Saya beri obat antidepresan ringan untuk menstabilkan perasaannya, dan juga suplemen kalium untuk menjaga elektrolit.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Baik, Dok. Apakah saya harus kembali cek lagi?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Kalau masih kelihatan gejalanya, sebaiknya bawa ke rumah sakit ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Terima kasih Dok, sudah membantu. Mudah-mudahan cepat sembuh.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Sama-sama Bu, istirahat yang cukup dan jaga nutrisi. Jaga kebersihan ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_25", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Selamat siang Pak, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Aku nggak enak badan, sering ngeri2in ya Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Bisa kasih detailnya Pak? Ngeri2in di mana aja dan kapan mulainya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris", "audited": true}
+{"text": "Emang ngeri2in, dari dulu gitu. Sama deket nyeret di dada, akhir-akhir ini sering.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Nah, gue periksa dulu tekanan darahmu. Hasilnya 120/85 ya. Tapi yang penting nyeret di mana aja? Di tengah-tengah atau dari sisi?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Ya, di tengah-tengah deh, sering2 nggak bisa berbicara.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Bisa jadi angina pektoris Pak. Kita periksa dulu kolesterol dan gula darahnya ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Angina biasanya ngeri2in di tengah-tengah, terutama saat berjalan atau beraktivitas. Kamu udah cek jantung sama dokter lain belum?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Belum ya Dok, baru rasanya nggak enak2in.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Ya kita liat dulu hasil pemeriksaan ini. Kita resepkan obat dan bikin pola hidup sehat Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Nanti gue kasih obat atasi nyeri, jangan lupa minum ya Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Selain itu, jaga pola makan sehat, kurangin rokok dan alkohol. Jauhin stress juga ya Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Ayo kita lanjutkan pemeriksaan lainnya ya Pak.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Angina pektoris itu serius Pak, jadi ikuti petunjuk dokter dan konsisten aja. Apalagi kalau nyeri ngeri2in lagi, langsung istirahat ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Kalau ada yang kurang paham, kasih tahu gue ya Pak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_26", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Selamat pagi Pak, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Migrain sering kepala sakit.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Oke, tekanan darahnya 130/85. Tanda vital lainnya normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Migrain ya? Berapa kali terjadi dalam seminggu?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Setiap hari, dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Rutinitas sehari-hari gimana? Ada stres besar gak?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Stres ya. Sering kerja tambahan.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Ya, migrain sering disebabkan stres. Waktunya istirahat lebih banyak.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Coba obat migrain ini, diambil sebelum nyeri makin parah.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Bisa juga latihan pernapasan dan relaksasi. Rutin aja.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Sakitnya bagaimana? Ringan atau parah?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Parah, dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Nanti kita resepin obat penguat juga. Diamin saja selama nyeri.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Kalau nggak sembuh, cek kembali ke sini ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Sampai jumpa Pak. Jaga tubuhmu.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_27", "source": "synthetic_llm", "kasus": "migrain"}
+{"text": "Sapa lu, Pak Budi? Sambut hari dengan sehat ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Sekar ya, Dok. Nih aku mau minta pengobatan lagi.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Bener aja? Apa keluhannya hari ini Pak Budi?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Pernapasan aku kaga enak, sering ngorok dan sesak ya. Udah terus gitu tiga minggu.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Ngorok ya? Jadi pernafasanmu ada masalah? Saya cek dulu tekanan darahnya Pak.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Tebak-tebakan aja, bisa jadi kamu udah punya asma. Tekanan darahmu 125 per 80 ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Asma? Apa nih itu? Saya kaga tau.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Asma itu kondisi pernapasan yang gampang terganggu, Pak. Kita cek tanda vital lainnya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Ngorok dan sesak udara adalah gejala asma. Kalau pernafasan kamu lebih sering kenceng, bisa ya asma.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Oh iya, kadang aku ngorok kaga jelas juga. Ntar malah nyaring aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Bener banget Pak Budi, itu biasanya gejala asma. Kita resepin inhaler nebulizer ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Nebulizer? Apa itu?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Itu alat buat nafas lembut, Pak. Buat kamu yang asma, penting pakai ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Baik dok, trims.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Bisa-bisanya sering cek suhu badan, Pak. Jangan lupa minum obatnya ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Cek lagi kalau ngorok atau sesak parah. Kalau kena infeksi, langsung ke dokter.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma", "audited": true}
+{"text": "Sekarang udah selesai ya? Trims Pak Budi, semoga cepet sembuh.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_28", "source": "synthetic_llm", "kasus": "asma"}
+{"text": "Selamat pagi Pak, terima kasih sudah datang. Silakan duduk.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Hai Dokter, saya rasa perut saya nggak enak ya, udah tiga hari ini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Ya, bisa jadi. Saya ngecek tekanan darahnya dulu ya, hasilnya 120/80. Tidak terlalu tinggi. Perut mana yang nggak enak?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Kira-kira di bagian tengah perut, dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Nanti saya pemeriksa perutnya juga. Saya perhatikan tanda-tanda dehidrasi, belum ada?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Belum dok, ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Baik, kemungkinan ini gastroenteritis. Saya periksa tekanan darah dan suhu tubuhnya juga ya, hasilnya 108 derajat Fahrenheit dan tekanan darah masih normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh, kok bisa gitu ya? Perut saya nyeri terus. Dokter nggak serius kan?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Tidak, tidak Pak. Gastroenteritis ini biasa disebabkan oleh virus atau bakteri. Saya periksa suhunya dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Sudah? Berapa derajat dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "108 Fahrenheit, masih normal. Anda nggak terlihat dehidrasi juga. Saya simpulkan ini gastroenteritis.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Gastroenteritis ya? Apa itu dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Ya, adalah peradangan di usus yang bisa disebabkan oleh infeksi. Biasanya disertai gejala seperti mual, muntah, dan nyeri perut.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh ya begitu. Nyerinya berat dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Ya, bisa jadi cukup intens. Saya resepkan antidiare dan obat pereda nyeri. Minum sebelum makan ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Baik dok, tapi apa saya boleh tetap bekerja?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Nanti coba istirahat dulu Pak. Jika masih merasakan gejala, jangan datang kerja ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oke dok, saya coba saja. Tapi kalau nggak sembuh, apa boleh datang ke sini lagi?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Tentu bisa Pak, kalau gejala tidak membaik atau ada perubahan yang mencurigakan. Jangan ragu untuk kembali berobat.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Terima kasih Dokter, semoga cepat sembuh ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Tidak usah repot Pak. Semangat dalam menghadapi penyakit ini. Saya juga percaya Anda akan segera baik-baik saja. Jangan lupa istirahat dan minum banyak air ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_29", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Selamat pagi Pak, tolong duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Halo Dok, saya tidak enak badan sudah beberapa hari.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tentu saja Pak, bisa ceritakan lebih detail tentang keluhannya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Ya, telinga saya sakit sejak tadi pagi dan tidak mau makan.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Oke Pak, saya cek tekanan darah Anda dulu ya. Hasilnya 120 per 80.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Oh, kok bisa gitu? Telinga kan gak ada aliran darah ya Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tidak Pak, bukan masalah tekanan darah. Tapi keluhan Anda mirip dengan otitis media.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Otomatis? Telinga kan enak ya Dok? Kenapa bisa sakit tiba-tiba begini?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media", "label_llm": "CHITCHAT", "audited": true}
+{"text": "Tidak Pak, biasanya otitis media dipicu oleh infeksi atau peradangan. Mungkin karena pilek sebelumnya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Oh ya, saya memang beberapa hari ini pilek dan hidung tersumbat.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media", "audited": true}
+{"text": "Bisa jadi itu penyebabnya Pak. Saya akan beri obat antipiretik dan antibiotik untuk mengurangi peradangan dan infeksi.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Obatnya banyak ya Dok? Saya takut efeksampingnya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tidak usah khawatir Pak, obat ini aman dan sudah saya atur dosisnya. Jangan lupa minum air putih banyak ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Baik Dok, kalau masih sakit nanti perlu kontrol kembali ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Ya Pak, jangan lupa datang kontrol 3-5 hari lagi. Kalau ada pertanyaan atau keluhan lain segera hubungi kami.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_30", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Selamat pagi Mas, tolong duduk saja dulu.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Halo Dok, saya merasa sukar bernapas dan hidung tersumbat ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Oke, kalau begitu kita cek suhu tubuhnya dulu ya. Saya lihat Anda kelihatan agak panik.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Ya benar, saya merasa panik dan takut ini lebih parah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Tenang saja, biar saya lihat kondisi Anda. Tekanan darahnya 120 per 80, normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Ini kelihatannya faringitis ya, gejalanya cocok dengan yang Anda alami.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Faringitis? Apa itu Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Itu peradangan pada tenggorokan, biasanya disebabkan oleh virus. Saya resepkan obat anti inflamasi dan antibiotik ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Baik Dok, tapi saya takut kalau ini lebih parah ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Tidak perlu cemas Mas, asal di rawat dan istirahat cukup, biasanya sembuh dalam beberapa hari saja.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Baik, tolong kasih petunjuknya ya. Bagaimana kalau saya merasa buruk setelah minum obat?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Kalau demam naik atau gejala berubah jadi parah, segera hubungi kami. Saya juga minta Anda cek suhu setiap 4-6 jam.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Oke Dok, terima kasih sudah menjelaskannya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Sama-sama Mas. Jaga diri dan istirahat yang cukup ya. Kalau masih merasa tidak nyaman, jangan ragu untuk kembali ke sini. Sampai jumpa.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_31", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Selamat datang Pak, tolong duduk dulu ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Oh dokter, saya rasa kulit wajah saya terlalu gatal dan memerah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Tenang saja Pak, biar saya periksa dulu ya. Tanda vital Anda normal, tekanan darah 125/80, nadi 76, suhu 36.5 derajat.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis", "audited": true}
+{"text": "Itu kelihatannya cukup parah Pak, saya curigai ini dermatitis. Apakah ada alergi atau iritansi baru yang Anda alami belakangan?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis", "audited": true}
+{"text": "Ya, tiga hari lalu saya memakai sabun baru dan krim malam juga berubah merk.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ternyata ada perubahan Pak. Saya resepkan obat antihistamin untuk mengurangi gatal, dan perlu digunakan setiap 6-8 jam. Hindari sabun baru tersebut ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Saya juga akan memberikan krim anti-inflamasi lokal. Gunakan sesuai petunjuk ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Baik dok, saya takut ini bertambah parah kalau gatalnya terus berlanjut.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Tidak perlu cemas Pak. Dengan penanganan yang tepat, gejalanya akan membaik dalam beberapa hari. Jika tidak ada perubahan, datang lagi ke sini ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis", "audited": true}
+{"text": "Saya juga resepkan krim steroid ringan untuk digunakan sesuai kebutuhan. Tapi jangan terlalu sering Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Baik dok, saya harap ini cepat sembuh ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Tentu saja Pak. Jaga kebersihan kulit dan hindari pemicu iritan. Kontrol ulang dalam 1 minggu setelah pemakaian obat. Terus jaga istirahat ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Jangan khawatir, semoga cepat sembuh Pak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_32", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Assalamu'alaikum Bu, ngapain ya sekarang?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Wassalam dok, emang ada sesuah aja sih, perih perut. Nggak enak nih.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Ntar saya cek dulu tekanan darahnya, udah ngapain ya?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Enggak apa-apa dok. Biasa aja.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Saya lihat nanti tekanan darahnya 125 per 80, gula darah normal. Perutnya perih gitu?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Iya dok, terus emang panas juga, udah tiga hari demam aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid", "audited": true}
+{"text": "Ntar saya periksa suhu badannya dulu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Enggak masukin, udah turun sih. Tapi tetep nggak enak.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Suhu badan normal 36.5 derajat dok. Perutnya perih gini?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Perih dok, sekarang udah agak nyeri juga. Nggak nafsu makan sama sekali.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Aduh itu, perutnya pake kain panas kan?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Enggak dok. Udah coba obat di rumah tapi nggak enak aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Ntar saya periksa tanda vitalnya dulu, tekanan darah 120 per 80 ya. Perutnya nyeri gitu?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Nyeri dok, udah agak panas juga.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Kemungkinan ini demam tifoid ya Bu. Saya buat resep obat ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Bener dok? Obatnya apa ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Saya beri antibiotik dan antipyrina. Dicairin dulu sebelum diminum ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Baik dok, terus harus ngapa aja?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Minum obatnya tepat waktu. Hindari makanan berminyak dan pedas ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Baik dok, terus harus kontrol aja nanti?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Ya, sebaiknya kontrol 2 minggu lagi. Saya juga rekomendasikan cek darah.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Oke dok, terima kasih ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Sama-sama Bu. Tuh kan udah ada resepnya. Jaga stamina dan makan baik-baik ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_33", "source": "synthetic_llm", "kasus": "demam tifoid"}
+{"text": "Selamat pagi mbak, mau tanya nih, apa masih perlu pemeriksaan lanjut aja ya?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Oh iya Dok, saya kasi dokter sebulan lalu gitu juga, enggak ada yang berbeda. Perutnya udah lebih enak gitu, tapi masih sering ngiler dan haus banget.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kayaknya nanti saya cek dulu tekanan darahnya ya. Hasilnya 120/80 mmHg.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Nggak masalah, tapi ngiler dan haus gitu, mungkin diabetesnya udah naik lagi. Tanda-tandanya udah ada.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Saya kasih obat oral yang baru ya, ini buat kontrol gula darah. Minum 2 kali sehari setelah makan. Dan jangan lupa cek diri sendiri dulu aja.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Saya anjurin juga buat diet ya, kurangi nasi dan gula. Pakai sayur-sayuran dan protein hewani.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kalau enggak ada masalah, kita kontrol lagi setahun depan ya. Jangan lupa ngisi formulir ini juga.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Oh iya Dok, kalau diet gitu bisa gampang ya? Saya enggak suka sayur-sayuran.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Enggak masalah mbak, kita bikin rencana diet yang sesuai aja. Ada makanan favorit kamu kan? Kita gabungkan deh.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kalau masih bingung, tinggal minta bantuin aja di puskesmas ini ya. Saya siap membantu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Terima kasih Dok, makasih sudah ngeluarin resepnya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Sama-sama mbak, semoga sehat. Jaga stamina ya. Sampai jumpa nanti.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_34", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selamat siang Pak, duduk saja ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Keluhan apa hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Mimpi vertigo, dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Apa sering terjadi? Periksa tekanan darah dulu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Tidak setiap hari, tadi siang.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "120/80, normal. Kemungkinan vertigo.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Berikan obat antidepresi ringan, diminum sore ini.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Biar istirahat dulu ya, jangan terlalu capek.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Oke dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo", "label_llm": "S_KELUHAN", "relabel_rule": "ack"}
+{"text": "Kalau tidak sembuh kunjungi lagi. Terus rawat diri.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Tolong bawa obat ini, ya. Sampai jumpa.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_35", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Selamat siang Pak, duduk saja ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Kemarin ada gatal di tangan, Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Tanda vital Anda normal: 130/85, nafas rapi, suhu 36.5 derajat.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ini bisa jadi dermatitis. Luka di tangan?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ada benjolan-benjolan kecil.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Berikan anti-peradangan, cuci tangan terus. Jaga kering.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Kalau nggak sembuh, datang lagi ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Oke, terima kasih Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_36", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Selamat pagi Pak, mau duduk dulu ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Oh, iya Dok, terima kasih.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Jadi, ada apa hari ini? Ada keluhan spesifik yang ingin Anda sampaikan?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Ya Dok, perut saya terasa sakit sudah beberapa hari. Makannya juga nggak enak.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Bisa ya Pak, saya cek tekanan darahnya dulu. Saya lihat ini 125/80. Tidak terlalu tinggi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Oh, berarti tidak ada masalah besar ya?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Tidak perlu khawatir Pak, tekanan darahnya normal. Kemungkinan ini bisa jadi maag atau dispepsia.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Maag? Makanya perut saya sakit ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Bisa juga Pak. Untuk mengatasinya, saya beri antasida yang bisa Anda ambil sebelum makan. Juga hindari makanan pedas dan asam.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Baik Dok, tapi kan itu susah ya?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Tentu saja tidak Pak. Coba dulu ya. Jika masih sakit, jangan ragu untuk kembali ke sini.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Oke Dok, terima kasih banyak ya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Sama-sama Pak. Semoga cepat sembuh. Jaga perut Anda ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_37", "source": "synthetic_llm", "kasus": "PPOK"}
+{"text": "Selamat siang mas, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Oh ya Dok, baru tadi saya cek tekanan darahnya 140/95.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Oke, kita periksa dulu tanda vitalmu.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Tekanan darahmu agak tinggi ya. Kalau biasanya berapa?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Kalau normalnya 120/80, tapi baru tadi cek saja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Dalam situasi ini, tekanan darahmu di kategori hipertensi tingkat 1.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Ayo kita rencanakan terapi dan edukasimu. Kita mulai dengan gaya hidup yang lebih sehat.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Oke Dok, kalau bagaimana ya gayanya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Sebisa mungkin kurangi garam dalam masakanmu. Cobain olahraga rutin setiap hari juga.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Tapi kalau sudah sering kan ngga enak ya Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Ya, tapi dengan terapi ini kita bisa mengendalikan tekanan darahmu. Kalau perlu kita akan resepin obat juga.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Baik Dok, saya coba aja dulu ya gaya hidupnya. Jadi ngga perlu obat?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Untuk saat ini kita coba dengan gaya hidup sehat. Kalau tekanan darahmu masih tinggi, baru kita resepin obat.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Oke Dok, terima kasih atas saranannya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi", "label_llm": "S_KELUHAN", "audited": true}
+{"text": "Selalu cek tekanan darahmu setiap harinya ya. Kalau ada perubahan atau gejala-gejala lain, langsung datang kembali. Sampai jumpa.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_38", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Selamat sore Pak, tolong duduk di kursi ini ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Bisa cerita apa yang bikin Anda tidak nyaman hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Perut saya terasa begah dan perih Pak, udah tiga hari gini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oke, biar saya cek tekanan darahnya dulu ya. Saya lihat ini 120/80, normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Mungkin masalah pencernaan Anda ini akibat gastritis. Daripada khawatir aja, saya kasih obat pereda sakit dan antasida ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Terapi ini akan membantu mengurangi rasa nyeri dan memperbaiki kondisi pencernaan Anda. Jangan lupa hindari makanan pedas, asam, atau berlemak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Kalau ada perubahan, jangan ragu untuk kembali ke sini ya Pak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Terima kasih Dok, kalau begah dan nyeri terus harus cek lagi kan?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Betul, jangan menunda-nunda untuk datang ke sini kalau kondisi Anda memburuk. Terus rawat diri ya Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_39", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Salaam dok, mana suruh duduk ya?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Perut saya nyeri, udah tiga hari gara-gara ngerasa mau muntah-muntah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Kayaknya tekanan darahnya lu normal. 120 per 80 aja.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Maaf Bu, kemungkinan ini bisa maag atau dispepsia ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Gini dok, perutnya nyeri bagian atas. Sama dulu makan malam, langsung perih.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Oke Bu, saya kasih obat antasida ya. Minum sebelum makan aja.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Dan jangan ngedapin makanan pedas atau asam, itu bisa bikin perut semakin sakit.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Ntar saya atur makanannya. Makasih dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Gak usah Bu, selalu cek diri aja kalau ada perubahan ya. Tapi biasa2 aja.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_40", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Selamat datang Bu, tolong duduk dulu ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Hai Dokter, saya bawa anak saya ini karena dia batuk dan pilek sudah beberapa hari.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Baiklah Bu, saya cek dulu tekanan darahnya. Hasilnya 120/80 mmHg.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Keluhan yang disampaikan ini kemungkinan adalah TB paru. Saya perlu tahu lebih detail, sudah berapa hari gejala muncul?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Gejalanya mulai tiga hari lalu, dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Baik, saya periksa lihat pileknya dulu. Pemeriksaan tiasa sudah tidak terlihat ya?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Belum Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Tanda vitalnya normal, suhu badannya 36.8 derajat Celsius, denyut nadi 72 kali per menit dan napas 18 kali per menit.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Berdasarkan keluhan dan pemeriksaan, kemungkinannya TB paru. Saya resepkan obat antibiotik, minum sehari tiga kali setelah makan. Jangan lupa rutin kontrol.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Selain itu, berikan asupan nutrisi yang baik dan istirahat cukup untuk mempercepat pemulihan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru", "audited": true}
+{"text": "Kalau ada gejala parah atau bertambah, segera datang kembali ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Tentu dok, terima kasih atas bantuan dan edukasinya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Sama-sama Bu. Jaga diri Anda dan anak Anda ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_41", "source": "synthetic_llm", "kasus": "TB paru"}
+{"text": "Selamat pagi Pak, tolong duduk sejenak.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Pak, ada apa dengan tubuh Anda hari ini? Apa yang membuat Anda datang ke sini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo", "audited": true}
+{"text": "Ya Dok, saya merasa pusing-pusing dan sering muntah. Sudah dua hari seperti ini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Saya akan cek tekanan darah Anda dulu ya. Ini alatnya, silakan ikuti arahnya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Hasil tekanan darahmu 125/80 mmHg. Tidak ada perubahan signifikan. Mungkin bukan karena hipertensi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Pusing dan muntah bisa disebabkan vertigo. Sudah pernah merasakan hal serupa sebelumnya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Ya, beberapa kali sebelumnya juga seperti ini. Tapi biasanya tidak terjadi dua hari berturut-turut.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Baiklah Pak, saya periksa telinga dan tenggorokan Anda untuk memastikan ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Tidak ada infeksi atau masalah lain di telinga dan tenggorokan. Vertigo bisa disebabkan oleh masalah dalam sistem pendengaran.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Saya beri obat antidepresan ringan untuk mengurangi vertigo ini, Pak. Minum sesuai petunjuk dan jangan lupa istirahat yang cukup.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Kalau vertigonya tidak berkurang atau malah memburu, datang ke sini lagi ya. Jaga kesehatan juga dengan makan seimbang dan banyak minum air.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Sampai jumpa Pak, semoga cepat sembuh. Tanya saja kalau ada yang tidak paham tentang obat ini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_42", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Selamat sore Pak, tolong duduk.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media", "audited": true}
+{"text": "Masalah telinga kanan sakit.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Bisa dihitung hari sakitnya? Tekanan hidup Anda?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tiga hari, 120/80.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Aku lihat telinga kananmu berair, ngedengar bagaimana?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tidak jelas ya, dok.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Kemungkinannya otitis media. Alergi gak ya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media", "audited": true}
+{"text": "Belum pernah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Telinga ditetesin obat, 3x sehari. Istirahat banyak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Baik dokter.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media", "label_llm": "P_EDUKASI_TERAPI", "audited": true}
+{"text": "Kontrol ke sini minggu depan, ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Oke, terima kasih Dok.", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Sama-sama. Sembuhkan diri ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_43", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Selamat pagi Bu, tolong duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Selamat pagih Dok, saya bawa anak saya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Oh iya? Anaknya punya keluhan apa hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi", "audited": true}
+{"text": "Ya dok, anak saya sering pusing dan kepala berdebar-debar.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Baik, saya cek dulu tekanan darahnya ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Nah, tekanan darah anak Anda 130/90. Ini sudah masuk kategori hipertensi ringan.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Kemungkinannya bisa karena stres atau gaya hidup ya. Kalau sering terjadi, kita perlu waspadai.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Ya ampun Dok, saya takut sekali kalau itu jadi penyakit serius.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi", "audited": true}
+{"text": "Jangan khawatir Bu, dengan terapi yang tepat ini bisa dicegah. Saya resepkan obat hipertensi ringan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Selain itu, pastikan anak Anda lebih banyak berolahraga dan hindari makanan berlemak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Baik Dok, saya akan memperhatikan hal-hal tersebut. Dan kapan harus kontrol lagi ya Dok?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Kontrol rutin setiap 3 bulan ya Bu. Kalau ada gejala yang berubah, datang saja dulu ke sini.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Terima kasih Dok, saya pasti akan perhatikan dan kontrol seperti yang Anda katakan.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_44", "source": "synthetic_llm", "kasus": "hipertensi"}
+{"text": "Sapa bang, apa kabar? Kenyataan hari ini mau pemeriksaan di mana ya?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo", "audited": true}
+{"text": "Oh dok, saya sakit kepala ya. Maketengah aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Bisa tolong cerita panjang pendeknya bang? Apa gitu sih yang bikin sakit kepalamu sekarang?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Ya gini dok, setelah tidur aja pusing. Maketengah aja ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Oke, saya periksa dulu tekanan darahnya. Tekanan darahmu 125/80 ya. Bisa?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Ya dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo", "label_llm": "O_PEMERIKSAAN", "audited": true}
+{"text": "Hasil pemeriksaanmu baik-baik aja, ga ada keluhan serius. Coba lihat dulu ya, gitu pusingnya di mana?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo", "audited": true}
+{"text": "Maketengah kepala dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Bisa jadi vertigo. Saya periksa telinganya dulu ya, nanti hasilnya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Ya dok, apa sih itu?", "role": "PASIEN", "label": "A_DIAGNOSIS", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo", "label_llm": "S_KELUHAN", "audited": true}
+{"text": "Vertigo itu pusing gitu, gak bisa fokus. Bisa jadi karena telinga ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Oh udah, bagaimana terapi aja dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Gampang banget, gara-gara vertigo ini. Saya beri obat antidesan dan minta pasir pakean teknik respirasi.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Apa itu dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Respirasi itu ngedalemin napas, biar kepala gak pusing. Jangan lupa minum obatnya ya, sesuai petunjuk.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Ya dok, terus saya harus kontrol lagi aja ya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Kalau sembuh aja, enggak usah. Tapi kalau nggak enak lagi, lho datengin. Dua minggu kemudian aja, oke?", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Ya dok, terima kasih.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Tidak usah, senang bisa membantu. Semoga cepat sembuh ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_45", "source": "synthetic_llm", "kasus": "vertigo"}
+{"text": "Selamat pagi Bu, silakan duduk dulu ya di kursi ini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Halo Dokter, mau tanya tentang putri saya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tentu saja Bu, apa yang terjadi dengan putrinya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Dia sering mengeluh sakit telinganya sejak kemarin.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Bisa saya lihat dulu bagian telinganya ya?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Ya, Dokter. Telinganya terlihat merah dan sedikit bengkak.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tekanan hidungnya bagaimana ya? Terdengar ada sekresi.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Ya, Dokter. Saya rasakan putri saya sering menggaruk telinganya dan keluhan sakit kepala juga berat.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tanda vitalnya seperti apa? Saya periksa dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Denyut nadi 72 kali per menit, napas rapi dan suhu badan normal.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Berdasarkan keluhan dan pemeriksaannya, kemungkinan putrinya mengalami otitis media. Saya periksa telinganya dan ada sedikit nanah di lubang telinga.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Oh, begitu ya Dok? Apakah ini berbahaya?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tidak perlu panik Bu. Otitis media umumnya ringan dan bisa diobati.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Ya, saya takut kalau ini berlanjut jadi lebih parah.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tidak akan seperti itu Bu. Saya beri antibiotik dan obat rasa sakit untuk mengurangi nyeri telinganya. Pastikan putri Anda banyak minum air putih ya, Dokter.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Baiklah, Dok. Apakah perlu kontrol kembali?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Setelah 3-4 hari pemberian obat, kita cek lagi ya Bu. Saya rujuk ke dokter gigi juga untuk inspeksi lebih lanjut.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Terima kasih Dok, semoga cepat sembuh ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Tidak masalah Bu. Jaga kesehatannya ya. Sampai jumpa dan semoga baik-baik saja.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_46", "source": "synthetic_llm", "kasus": "otitis media"}
+{"text": "Selamat sore Pak, tolong duduk dulu ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Sore dok, saya nggak enak badan udah tiga hari.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Cepat banget ya? Apa yang bikin kamu merasa nggak enak badan ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Mukanya gatal, sukar ngelapang dan ngilangin pilek juga, Dok.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Nanti saya cek dulu ya, tekanan darahmu apa?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "120/80, ya Dok.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Oh ya, perasaan keringat terus?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Tidak begitu dok, hanya keringan di mulutnya aja.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Bisa jadi faringitis. Cek lidah dan tenggorokannya juga ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Tampaknya memang lebih merah, Dok.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Baiklah, kita beri obat anti inflamasi dan antihistamin dulu ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Oke dok, itu saja Pak?", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Jangan minum alkohol dan hindari makanan pedas atau asam. Kalau nggak sembuh dua hari ke depan, cek lagi ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_47", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Selamat pagi Bu, silakan duduk.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Assalamu'alaikum dokter, anak saya keluhkan sakit dada ya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris", "audited": true}
+{"text": "Ya ma'am, bisa tolong ceritakan lebih detail tentang keluhannya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Kebetulan dokter, ini anak saya. Dia merasa nyeri di dada beberapa hari terakhir.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Baik Bu, kita cek dulu tekanan darahnya ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris", "audited": true}
+{"text": "Hasilnya normal, 120/80. Tanda vital lainnya juga dalam batas normal.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Nyeri di dada tadi itu terjadi kapan ya? Kalo bisa jelaskan lebih rinci.", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Kalau saya ingat, mulai beberapa hari lalu. Kadang begitu gerak-geriknya intens.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Bisa jadi ini angina pektoris, tapi kita perlu lebih teliti ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Apakah itu berbahaya dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Tidak usah panik Bu. Jika benar angina, kita bisa mengelolanya dengan baik.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Ya ampun, kalau begitu tolong bantu ya Dok. Apa harus pake obat?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Kita beri obat anti-angina dulu ya, dan saya jelaskan bagaimana mengatasinya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Ingat Bu, jangan lupa ambil obat tepat waktu. Jaga pola makan juga ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris", "audited": true}
+{"text": "Terima kasih Dokter, saya akan perhatikan. Kapan kita kontrol lagi?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Kalau tidak ada keluhan baru, 2 minggu kemudian ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Baik dokter, terima kasih atas penjelasannya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Sama-sama Bu. Jaga diri dan anak Anda ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_48", "source": "synthetic_llm", "kasus": "angina pektoris"}
+{"text": "Selamat pagi Pak, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Ya Dok, perut ini malesan sejak kemarin.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Oke, duduk aja dulu ya. Saya cek tekanan darahnya dulu.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Baik Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA", "label_llm": "O_PEMERIKSAAN", "relabel_rule": "ack"}
+{"text": "Tanda vitalmu baik-baik, tapi perut terasa gimana?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Ngeri ya, rasanya ngetesin daging gitu.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Kurang lebih gitu aja ya, coba saya cek nanti.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Baik Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA", "label_llm": "O_PEMERIKSAAN", "audited": true}
+{"text": "Hasil tekanan darahmu normal, 120/80. Kemungkinan ini bisa jadi ISPA.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "ISPA? Apa itu ya Dok?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Ya, Infeksi Saluran Pernafasan Atas. Biasanya disebabkan bakteri atau virus.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Oke ya Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA", "label_llm": "S_KELUHAN", "relabel_rule": "ack"}
+{"text": "Gagal aja, nanti saya berikan obat antibiotik ya. Minum setelah makan supaya enak ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Baik Dok, dan perlu kontrol kapan lagi?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Kalau sudah empat hari nggak sembuh, datang aja kembali ya. Nanti kita liat lebih lanjut.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_49", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Selamat pagi Pak, duduk aja ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Ini hari kelima batuknya masih nggak sembuh.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Napas dan suhu tubuhnya gimana?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Napas normal, suhu 36.5 derajat.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Rahang bawah agak merah, nyeri nggosoknya?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Ya, sedikit sakit.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Kemungkinan faringitis. Saya periksa tenggorokan aja dulu ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Oke.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis", "label_llm": "S_KELUHAN", "relabel_rule": "ack"}
+{"text": "Nanti saya beri obat sesuai anjuran. Minum setengah jam sebelum makan, terus istirahat banyak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_50", "source": "synthetic_llm", "kasus": "faringitis"}
+{"text": "Selamat pagi Bu, mau konsultasi apa hari ini?", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Halo Dokter, mata anak saya agak merah sejak kemarin.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Bisa tolong bilangkan usia dan jenis kelamin anak Anda?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Anak perempuan saya berumur 4 tahun.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Baik, saya lihat dulu ya. Tekanan darahnya normal, 100/60 mmHg.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Tanda-tanda lainnya? Mata merah selalu saja atau hanya pada satu mata?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Ya, hanya pada mata kanan. Tidak ada gejala lain.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Mata merah seperti ini biasanya disebabkan oleh konjungtivitis. Saya periksa sekilas,", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Ya, mata kanannya agak berair dan gatal,", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Benar, mata anak Anda memang mengalami konjungtivitis. Akan saya berikan obat antiseptik mata untuk anda pakai.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Tetap jaga kebersihan mata dan hindari menyentuh mata dengan tangan yang kotor ya Bu.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Terima kasih Dok, saya akan waspada.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Tidak apa-apa. Kalau ada gejala baru atau parah datang ke sini ya. Sampai jumpa.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_51", "source": "synthetic_llm", "kasus": "konjungtivitis"}
+{"text": "Selamat siang Pak, duduk aja ya di kursi ini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Bapak ada keluhan apa hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Perut saya perih banget Pak, sudah tiga hari gitu. Saya juga kena demam nih.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA", "audited": true}
+{"text": "Ntar saya cek dulu tekanan darahnya ya, liat hasilnya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Tanda vitalnya oke-oke aja Pak, tekanan darah 130/85. Demamnya masih gitu nih?", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Ya udah, saya pernah minum obat demam tapi gak seberapa. Ntar ya sembuh sendiri aja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Bisa jadi ISPA Pak, maafkan nanti kalau saya pake bahasa formal.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Saya kasih obat anti-inflamasi untuk perutnya, dan antipyrétik buat demam. Minum sebelum makan ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Hindari makanan pedas dan berlemak Pak. Istirahat cukup juga penting.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Bisa bawa obat ini ke apotek ya, klo ga mau datang ke sini.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Ntar saya rekomendasikan juga buat cek diperiksa nanti Pak. Kalau ada perubahan lihat dokter ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Saya minta maaf kalau urusan ini ga terlalu nyambung, saya cuma di sini buat ngecek keluhan aja.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_52", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Selamat pagi Pak, silakan duduk dulu di kursi ini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Pak, bagaimana perasaan Anda hari ini? Ada yang baru tidak?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya Dok, saya merasa cemas Pak. Tiba-tiba tekanan darah turun kemarin, dan gula darahnya juga tinggi. Saya takut sekali.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tenang ya Pak, kita periksa dulu dengan alat ini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tensi Anda sekarang 135/80 mmHg dan gula darahnya 160 mg/dL. Saya cek lagi nanti ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Wah, emangnya masih tinggi ya? Apa yang harus saya lakukan Pak?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tidak perlu panik Pak. Kita fokuskan dulu pada kontrol gula darah dan tekanan darah Anda.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Pak, apa obat-obatan diabetes Anda sudah diambil hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Ya Dok, tadi pagi saya minum insulinnya. Saya lupa nih, biasanya saya meminum pilnya juga.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik Pak, insulinsi dan pilnya harus diambil ya. Selain itu, perbanyak konsumsi air putih dan hindari makanan manis ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Pak, bagaimana dengan pola makan Anda? Sudah rutin belum?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Belum Dok. Saya suka makan nasi putih dan gorengan Pak.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Pak, penting untuk mengubah pola makan Anda menjadi lebih sehat ya. Makan nasi merah, sayuran, dan buah-buahan saja.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Jangan lupa juga berolahraga secara teratur Pak. Saya rekomendasikan jogging atau jalan kaki setiap hari.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Baik Dok, saya akan coba ya. Tapi kalau nanti gula darahnya masih tinggi, apa harus ke RS lagi Pak?", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Kalau memang sudah berulang dan tidak terkendali, ya mungkin kita perlu mengevaluasi pengobatan Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Tidak ada masalah Pak, ini normal. Kita cek lagi nanti. Jangan lupa kontrol rutin di sini ya setiap 3 bulan sekali.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_53", "source": "synthetic_llm", "kasus": "diabetes melitus tipe 2"}
+{"text": "Selamat datang Pak, tolong duduk dulu ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Bapak bawa siapa hari ini? Ada keluhan apa?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ya Dokter, saya datang karena putri saya keluhannya tidak baik. Dia terus mengeluhkan gatal di kulitnya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Baik, tolong periksa tekanan darahnya dulu ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ya Dok, saya cek sekarang. Tegangan 120/80 mmHg dan denyut nadi 76 kali per menit.", "role": "PASIEN", "label": "O_PEMERIKSAAN", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Tampaknya tidak ada yang terlalu tinggi. Kemungkinan ini bisa jadi dermatitis atau eksim. Saya cek kulitnya sekarang ya.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ya, kulit putri Anda tampak merah dan gatal. Aku resepkan salep kortikosteroid untuk mengurangi peradangan. Minum juga air secukupnya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Saya juga akan memberikan saran bagaimana menjaga kulit agar tidak gatal, seperti membersihkan badan dengan sabun lembut dan mengeringkannya dengan pengering tangan yang lembut.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Apakah putri Anda pernah mengalami hal serupa sebelumnya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Ya Dok, beberapa kali kemarin juga. Tapi biasanya berakhir dengan obat-obatan di apotek saja.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Baik, kalau kondisi ini terus berulang atau memburuk, sebaiknya kita cek lagi ya. Jangan lupa kontrol setelah sembuh juga. Sampai jumpa.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_54", "source": "synthetic_llm", "kasus": "dermatitis"}
+{"text": "Selamat pagi Pak, udah biasa aja duduk di sini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Oh iya, dok, saya mau bicara tentang perut yang sakitnya.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Oke, ceritain aja ya, sejak kapan gitu?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Kira-kira 3 hari terakhir. Saya merasa perutnya sakit, gini.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Saya cek dulu tekanan darahmu ya. Tampaknya 120/80.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Oh, itu normal kan?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Ya, masih dalam batas normal. Kemungkinan ini bisa jadi dispepsia.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Dispepsia apa sih?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Itu adalah peradangan pada lambung, biasanya menyebabkan rasa sakit di perut atas. Biasanya disebabkan oleh makanan asam atau pedas.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Oh ya udah, saya banyak makan nasi goreng pedas gitu,", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Ya, bisa jadi itu menyebabkan peradangan. Aku beri obat antasida dan anjurin kamu pake sebelum makan. Hindari makanan pedas ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Ok, makasih Dok. Nanti saya aturannya jelas2 lagi ya?", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Tentu saja, dan inget deh, kalau perutnya nggak sembuh dalam 3-5 hari datang kembali.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Baik dok, saya akan coba aja. Thanks again.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Sama-sama Pak, jaga perutmu ya dan jangan lupa kontrol 2 minggu lagi.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_55", "source": "synthetic_llm", "kasus": "dispepsia"}
+{"text": "Selamat pagi Pak, tolong duduk.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Hai Dok, ada perih di perut.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Tekanan darah normal 120/80. Saya cek perutnya ya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Ya sudah.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Ini mungkin gastroenteritis, Pak.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oh iya ya.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Saya beri obat antidiare dan antibiotik. Minum sebelum makan.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Kalau masih perih, cek lagi nanti. Jaga makanan enak-enakan ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Oke Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_56", "source": "synthetic_llm", "kasus": "gastroenteritis"}
+{"text": "Selamat pagi Pak, tolong duduk saja dulu.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Pak, ada apa dengan perut Anda hari ini? Terasa sakit ya?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Ya Dok, saya merasa perih di perut bagian atas sejak tadi pagi.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Baik, saya cek tekanan darahnya dulu ya, hasilnya 120/80 mmHg.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Kemungkinan ini bisa jadi dispepsia atau maag. Apanya yang sering Anda makan hari ini?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Biasanya saya makan nasi goreng, ayam, dan irisan tomat Pak.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Ternyata ya, bisa jadi masalah asam lambung. Saya beri obat antasida, diminum sebelum makan. Hindari makanan pedas atau asam.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Saya juga sarankan Pak untuk istirahat yang cukup dan banyak minum air putih ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Oke Dok, saya akan perhatikan. Terima kasih atas saran Anda.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Selamat beraktivitas Pak. Jika ada keluhan lanjut datang ke sini ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_57", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Selamat pagi Pak, tolong duduk ya di kursi ini.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Halo Dok, saya rasa perut saya nggak nyaman sejak kemarin.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Ya begitu ya, saya cek tekanan darahnya dulu ya. Ini alat pengukurnya.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Nanti Dok.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Tebakannya bisa jadi itu masalah perut, seperti maag atau dispepsia. Tapi kita lihat dulu ya setelah cek tekanan darah ini,", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Oke Dok, biar saya tahu apa yang harus dilakukan.", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Saya resepin antasida untuk perutnya. Minum sebelum makan ya, dan hindari makanan pedas atau asam. Kalau masih nggak nyaman, datang lagi ke sini ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Terima kasih Dok, kalau begitu saya pergi dulu,", "role": "PASIEN", "label": "CHITCHAT", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Sama-sama Pak. Jaga diri ya. Saya juga akan ikut mencari tahu informasi terkait penyakitmu,", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_58", "source": "synthetic_llm", "kasus": "ISK"}
+{"text": "Selamat pagi Pak, boleh duduk ya.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Buat apa sih datang ke klinik hari ini, Pak?", "role": "DOKTER", "label": "S_KELUHAN", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Perut saya sakit terus dok, rasanya seperti ada tanda tanya di perut.", "role": "PASIEN", "label": "S_KELUHAN", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Nanti saya cek tekanan darahnya dulu ya. Hasilnya 120/80 pak.", "role": "DOKTER", "label": "O_PEMERIKSAAN", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Bisa jadi ini karena perut Anda yang sakit, atau bisa juga ada masalah lain.", "role": "DOKTER", "label": "A_DIAGNOSIS", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Saya akan beri obat untuk meredakan nyeri dan mengurangi asam dalam lambung ya. Minum sebelum makan ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Dan hindari makanan pedas, goreng, atau asam. Cobain aja deh Pak.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Ya, Dok. Saya pasti akan mengikuti anjuran ya.", "role": "PASIEN", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Baiklah, kalau ada gejala yang parah atau bertambah Pak, datang ke klinik lagi ya.", "role": "DOKTER", "label": "P_EDUKASI_TERAPI", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
+{"text": "Semoga cepat sembuh Pak. Sampai jumpa.", "role": "DOKTER", "label": "CHITCHAT", "template_id": "llm_0_59", "source": "synthetic_llm", "kasus": "ISPA"}
