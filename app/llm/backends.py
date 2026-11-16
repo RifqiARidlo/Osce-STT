@@ -30,8 +30,11 @@ class LLMBackend(Protocol):
 
 
 class OllamaBackend:
-    def __init__(self, base_url: str, model: str, num_ctx: int, timeout_s: int, unload_after: bool) -> None:
+    def __init__(self, base_url: str, model: str, num_ctx: int, timeout_s: int, unload_after: bool,
+                 options: dict[str, Any] | None = None) -> None:
         self.base_url = base_url.rstrip("/")
+        # default deterministik untuk rangkuman; `options` menimpa (mis. sampling untuk generator data)
+        self.options: dict[str, Any] = {"temperature": 0, "num_ctx": num_ctx, **(options or {})}
         self.model = model
         self.num_ctx = num_ctx
         self.timeout_s = timeout_s
@@ -59,7 +62,7 @@ class OllamaBackend:
             "format": schema,
             "stream": False,
             "keep_alive": 0 if self.unload_after else "10m",
-            "options": {"temperature": 0, "num_ctx": self.num_ctx},
+            "options": self.options,
         })
         try:
             return data["message"]["content"]
