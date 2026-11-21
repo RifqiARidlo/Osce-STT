@@ -25,7 +25,8 @@ def health(svc: Services = Depends(get_services)) -> dict:
     return {
         "status": "ok",
         "llm_backend": s.llm_backend,
-        "llm_model": s.ollama_model if s.llm_backend == "ollama" else s.llamacpp_model_path,
+        "llm_model": {"ollama": s.ollama_model, "deepseek": s.deepseek_model,
+                      "llamacpp": s.llamacpp_model_path}.get(s.llm_backend, ""),
         "whisper_model": s.whisper_model,
         "gpu_swap_policy": s.gpu_swap_policy,
         "gpu_loaded": svc.ctx.slot.loaded,

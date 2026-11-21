@@ -65,11 +65,14 @@ class Settings(BaseModel):
     use_ecapa: bool = False  # butuh torch + speechbrain
 
     # --- Stage 4 ---
-    llm_backend: Literal["ollama", "llamacpp", "none"] = "ollama"
+    llm_backend: Literal["ollama", "llamacpp", "deepseek", "none"] = "ollama"
     ollama_url: str = "http://127.0.0.1:11434"
     ollama_model: str = "qwen2.5:3b"
     llamacpp_model_path: str = ""
     llamacpp_n_gpu_layers: int = -1
+    deepseek_api_key: str = Field(default="", repr=False)  # rahasia: jangan dicetak ke log
+    deepseek_model: str = "deepseek-chat"
+    deepseek_url: str = "https://api.deepseek.com"
     llm_ctx: int = 8192
     llm_timeout_s: int = 300
     llm_max_retries: int = 1
@@ -140,6 +143,9 @@ def get_settings() -> Settings:
         ollama_model=_env("APP_OLLAMA_MODEL", "qwen2.5:3b"),
         llamacpp_model_path=_env("APP_LLAMACPP_MODEL_PATH", ""),
         llamacpp_n_gpu_layers=int(_env("APP_LLAMACPP_N_GPU_LAYERS", "-1")),
+        deepseek_api_key=_env("APP_DEEPSEEK_API_KEY", ""),
+        deepseek_model=_env("APP_DEEPSEEK_MODEL", "deepseek-chat"),
+        deepseek_url=_env("APP_DEEPSEEK_URL", "https://api.deepseek.com"),
         llm_ctx=int(_env("APP_LLM_CTX", "8192")),
         llm_timeout_s=int(_env("APP_LLM_TIMEOUT_S", "300")),
         gpu_swap_policy=_env("APP_GPU_SWAP_POLICY", "swap"),  # type: ignore[arg-type]

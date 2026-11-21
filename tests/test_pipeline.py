@@ -273,3 +273,39 @@ def test_train_speaker_script_on_active_learning_data(tmp_path, doctor_enroll_au
     metrics = json.loads((out / "metrics.json").read_text())
     assert "confusion_matrix" in metrics["test"] and "baseline_heuristik_anchor" in metrics["comparison"]
     assert SpeakerRoleClassifier.load(out / "model.joblib").is_trained
+
+
+def test_deepseek_backend_payload_and_errors(monkeypatch):
+    import io
+    import json as _json
+
+    import pytest
+
+    from app.llm import backends
+
+    with pytest.raises(backends.LLMError):
+        backends.DeepSeekBackend(api_key="")
+
+    seen = {}
+
+    class _Resp(io.BytesIO):
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+    def fake_urlopen(req, timeout):
+        seen["url"] = req.full_url
+        seen["auth"] = req.get_header("Authorization")
+        seen["body"] = _json.loads(req.data.decode("utf-8"))
+        return _Resp(_json.dumps({"choices": [{"message": {"content": '{"ok": true}'}}]}).encode())
+
+    monkeypatch.setattr(backends.urllib.request, "urlopen", fake_urlopen)
+    llm = backends.DeepSeekBackend(api_key="sk-test", model="deepseek-chat")
+    assert llm.generate_json("sys", "keluarkan JSON", {"type": "object"}) == '{"ok": true}'
+    assert seen["url"] == "https://api.deepseek.com/chat/completions"
+    assert seen["auth"] == "Bearer sk-test"
+    assert seen["body"]["response_format"] == {"type": "json_object"}
+    assert seen["body"]["temperature"] == 0
+    assert "sk-test" not in repr(llm.__dict__.get("name"))

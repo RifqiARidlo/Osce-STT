@@ -8,7 +8,7 @@ from typing import Any, Callable
 from app.config import Settings
 from app.core.job_queue import JobQueue
 from app.core.model_slot import GpuModelSlot
-from app.llm.backends import LlamaCppBackend, OllamaBackend
+from app.llm.backends import DeepSeekBackend, LlamaCppBackend, OllamaBackend
 from app.ml.speaker_embedding import load_embedder
 from app.ml.speaker_role import SpeakerRoleClassifier
 from app.ml.text_intent import IntentClassifier
@@ -47,6 +47,9 @@ def _model_factories(s: Settings) -> dict[str, Callable[[], Any]]:
         if s.llm_backend == "ollama":
             return OllamaBackend(s.ollama_url, s.ollama_model, s.llm_ctx, s.llm_timeout_s,
                                  unload_after=s.gpu_swap_policy == "swap")
+        if s.llm_backend == "deepseek":
+            return DeepSeekBackend(s.deepseek_api_key, s.deepseek_model, s.deepseek_url,
+                                   min(s.llm_timeout_s, 180))
         if s.llm_backend == "llamacpp":
             return LlamaCppBackend(s.llamacpp_model_path, s.llamacpp_n_gpu_layers, s.llm_ctx)
         raise RuntimeError("LLM backend = none")

@@ -5,6 +5,9 @@
             setelah respons -> setara memory swap.
 - llama-cpp-python: `response_format={"type": "json_object", "schema": ...}` -> grammar GBNF internal.
 Keduanya tidak butuh Outlines (mengurangi dependency).
+- DeepSeek (API cloud, OpenAI-compatible): `response_format={"type": "json_object"}`. Schema TIDAK
+            ditegakkan server -> mengandalkan schema di prompt + validasi Pydantic + retry. Data
+            transkrip keluar dari mesin: hanya untuk uji coba dengan data fiktif.
 """
 from __future__ import annotations
 
@@ -75,6 +78,55 @@ class OllamaBackend:
             self._post("/api/generate", {"model": self.model, "keep_alive": 0})
         except LLMError:
             pass
+
+
+class DeepSeekBackend:
+    """Uji coba dengan LLM cloud. Tidak memakai VRAM lokal; `close()` tidak melakukan apa-apa."""
+
+    def __init__(self, api_key: str, model: str = "deepseek-chat",
+                 base_url: str = "https://api.deepseek.com", timeout_s: int = 120,
+                 max_tokens: int = 4096) -> None:
+        if not api_key:
+            raise LLMError("APP_DEEPSEEK_API_KEY belum diisi di .env.")
+        self._api_key = api_key
+        self.model = model
+        self.base_url = base_url.rstrip("/")
+        self.timeout_s = timeout_s
+        self.max_tokens = max_tokens
+        self.name = f"deepseek:{model}"
+
+    def generate_json(self, system: str, user: str, schema: dict[str, Any]) -> str:
+        payload = {
+            "model": self.model,
+            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
+            "response_format": {"type": "json_object"},
+            "temperature": 0,
+            "max_tokens": self.max_tokens,
+            "stream": False,
+        }
+        req = urllib.request.Request(
+            f"{self.base_url}/chat/completions", data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {self._api_key}"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=self.timeout_s) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode("utf-8", errors="replace")[:300]
+            raise LLMError(f"DeepSeek HTTP {exc.code}: {body}") from exc
+        except (urllib.error.URLError, TimeoutError) as exc:
+            raise LLMError(f"DeepSeek tidak dapat dihubungi: {exc}") from exc
+        try:
+            content = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise LLMError(f"Respons DeepSeek tidak terduga: {str(data)[:300]}") from exc
+        if not content:
+            raise LLMError("DeepSeek mengembalikan konten kosong.")
+        return content
+
+    def close(self) -> None:
+        pass
 
 
 class LlamaCppBackend:
