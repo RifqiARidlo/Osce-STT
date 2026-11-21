@@ -140,7 +140,7 @@ Yang dikerjakan skrip, langkah demi langkah:
 | 6. Ollama | `ollama pull qwen2.5:3b` (1.9 GB) | Model LLM untuk rangkuman. 3B dipilih karena muat bergantian dengan Whisper di GPU 4–6 GB. |
 | 7a. Whisper | Mengunduh Whisper `small` (±0.5 GB) ke `models/whisper` lalu memuatnya di GPU | Mengunduh model sekaligus **menguji GPU sejak awal**. Kalau ada error CUDA/DLL, ketahuan sekarang, bukan saat demo. |
 | 7b. Model intent | `train_text_intent.py` pada data sintetis (±2 menit) | `models/` tidak ada di GitHub (file sklearn tidak portabel antar-versi), jadi model ML-2 dilatih ulang di mesin ini. Model ML-1 belum ada; server memakai heuristik anchor sampai data role-play terkumpul. |
-| 8. pytest | 31 test CPU | Bukti instalasi utuh. Semua harus `passed`. |
+| 8. pytest | 32 test CPU | Bukti instalasi utuh. Semua harus `passed`. |
 
 ---
 
@@ -238,3 +238,37 @@ jaringan kampus sering memblokir koneksi antar-perangkat (*client isolation*).
 | URL lama tidak bisa dibuka | Tunnel dinyalakan ulang → URL baru | Lihat `runtime\tunnel_url.txt` |
 | Error 413 saat upload | File > batas (Cloudflare 100 MB, server 200 MB) | Rekam lebih pendek; jangan upload video |
 | Semua data hilang setelah reboot | Deep Freeze | Pasang repo di drive yang dikecualikan (§1) |
+
+---
+
+## 9. Mode uji coba di laptop sendiri dengan DeepSeek API (opsional)
+
+Untuk mencoba sistem di laptop pribadi tanpa Ollama, misalnya kalau GPU kecil atau sekadar demo cepat.
+Whisper, ML-1, ML-2, dan PII scrub tetap berjalan lokal. **Hanya tahap rangkuman (S4)** yang memakai
+DeepSeek, yaitu LLM cloud yang dipanggil lewat API.
+
+1. Instal seperti §2–4. Ollama tidak perlu, jadi jalankan skrip dengan `-SkipOllama`. Tambah `-Cpu`
+   bila laptop tanpa GPU NVIDIA.
+2. Tambahkan API key ke `.env`. File ini tidak di-commit:
+   ```
+   APP_DEEPSEEK_API_KEY=sk-...
+   ```
+3. Klik dua kali **`start_local_deepseek.bat`**. Server menyala di `http://127.0.0.1:8000` dan browser
+   terbuka otomatis. Karena alamatnya `localhost`, mikrofon diizinkan tanpa sertifikat.
+4. Cek `http://127.0.0.1:8000/api/health`. Hasilnya harus `"llm_backend": "deepseek"`.
+
+**Cara kerja:**
+- Launcher hanya mengganti `APP_LLM_BACKEND` untuk proses itu. Isi `.env` (mis. Ollama untuk lab)
+  tidak diubah.
+- DeepSeek dipanggil dengan JSON mode. Schema dikirim di prompt, lalu output divalidasi Pydantic dan
+  diulang sekali bila tidak valid.
+- Aturan `sumber` dan fallback rule-based tetap berlaku.
+- Hasil uji dialog fiktif: rangkuman valid untuk `soap_umum` dan `osce_respirasi`, ±2 detik per
+  rangkuman.
+
+**Batasan dan keamanan:**
+- **Sistem tidak offline.** Transkrip yang sudah di-scrub PII dikirim ke server DeepSeek di luar
+  negeri. Pakai data fiktif/role-play saja, dan sebutkan di laporan bila mode ini dipakai.
+- API key = kunci tagihan. Jangan ditaruh di repo, slide, atau chat grup. Bila pernah terlihat orang
+  lain, **revoke/ganti** di dashboard DeepSeek.
+- Hasil evaluasi resmi tetap memakai Ollama lokal, karena itu konfigurasi yang dirancang.

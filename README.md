@@ -8,6 +8,7 @@ di browser. Semua inferensi (Whisper, 2 model Custom ML, LLM) berjalan di server
 pengujian data nyata → [`docs/TUTORIAL_TESTING.md`](docs/TUTORIAL_TESTING.md) ·
 cara kerja & alasan tiap tahap → [`docs/BELAJAR_SISTEM.md`](docs/BELAJAR_SISTEM.md).
 Mode Cloudflare tunnel membuat sistem **tidak lagi offline** (audio melewati Cloudflare): hanya untuk data fiktif.
+Uji coba cepat di laptop dengan LLM cloud DeepSeek: `start_local_deepseek.bat` (`docs/INSTALASI_LAB.md` §9; juga tidak offline).
 
 ```
  Laptop dokter (browser, spesifikasi rendah)            Laptop server (GPU 4–6 GB)

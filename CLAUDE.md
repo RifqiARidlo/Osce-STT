@@ -40,7 +40,7 @@ slot, audio IO), `app/api/` (routes), `app/static/` (UI tanpa build step), `scri
 ## Perintah
 ```bash
 pip install -r requirements.txt            # + requirements-optional.txt untuk pytest/matplotlib
-pytest -q                                   # 31 test CPU, harus tetap hijau
+pytest -q                                   # 32 test CPU, harus tetap hijau
 python scripts/generate_synthetic_text.py --n-per-template 25
 python scripts/train_text_intent.py --data data/synthetic/text_intent.jsonl
 python scripts/train_speaker_role.py --data runtime/training_data/speaker_role.jsonl --model svm
@@ -65,6 +65,9 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --ssl-keyfile key.pem --ssl-cert
 - Akses publik (keputusan user 2026-11-16): Cloudflare Quick Tunnel via `start_osce.bat`; server di
   127.0.0.1 tanpa TLS, token wajib. Melanggar premis offline -> hanya data fiktif. Instalasi lab:
   `scripts/windows/setup_lab.ps1` + `docs/INSTALASI_LAB.md`. Materi belajar: `docs/BELAJAR_SISTEM.md`.
+- Uji coba LLM cloud (permintaan user 2026-11-21): `APP_LLM_BACKEND=deepseek` (`DeepSeekBackend`,
+  JSON mode tanpa schema enforcement -> schema di prompt + Pydantic + retry). `start_local_deepseek.bat`
+  meng-override backend lewat env proses; `.env` lab tetap Ollama. Key di `.env` saja, data fiktif saja.
 - BELUM PERNAH dijalankan: llama-cpp backend, ECAPA/speechbrain, akses LAN/HTTPS dari laptop client,
   WER & rangkuman pada rekaman mikrofon asli.
 - Dikembangkan di Python 3.13 + scikit-learn 1.9. Laptop server: Python 3.11.9 di `.venv`
